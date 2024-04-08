@@ -146,7 +146,7 @@ b {
 
 .authorNote {
     font-style: italic;
-
+    font-size: 16px;
 }
 
 .pageSectionHeader {
@@ -176,6 +176,10 @@ b {
     margin-top: 15px;
 }
 
+.referencesList a {
+    word-break: break-all;
+}
+
 .returnHomeEnd, .returnHomeEnd a:link, .returnHomeEnd a:hover, .returnHomeEnd a:visited, .returnHomeEnd a:active {
     margin: 40px 0;
     color: #4b4b4b;
@@ -202,7 +206,7 @@ b {
     }
 
     .pageParagraph {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .pageSectionHeader {
