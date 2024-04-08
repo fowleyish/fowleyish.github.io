@@ -1,0 +1,212 @@
+@font-face {
+    font-family: BakbakOne;
+    src: url('../fonts/Bakbak_One/BakbakOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lora;
+    src:url('../fonts/Lora/Lora-VariableFont_wght.ttf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    min-width: 400px;
+}
+
+.pageMain {
+    width: 100%;
+    margin: 30px 0 10px 0;
+}
+
+.titlePipe {
+    margin: 0 12px;
+}
+
+.articleStartFowleyIcon {
+    height: 20px;
+    width: auto;
+    display:inline-block;
+    align-self: center;
+}
+
+
+.backHome {
+    margin-top: 20px;
+    margin-bottom: 38px;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.backHome a:link, .backHome a:visited, .backHome a:hover, .backHome a:active {
+    color:#4b4b4b;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pageTitle {
+    font-size: 30px;
+}
+
+.projectType, .timerIcon {
+    font-weight: 200;
+    text-transform: uppercase;
+    color:#4e4e4e;
+    font-size: 16px;
+    fill: #4e4e4e;
+    height: 16px;
+    
+}
+
+.pageContent {
+    width: 900px;
+}
+
+.downloadSVG {
+    fill: #250daa;
+    height: 22px;
+    width: auto;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton {
+    border: 2px solid #250daa;
+    border-radius: 4px;
+    padding: 6px 0;
+    width: 300px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.downloadProjectFiles {
+    transition-duration: 0.3s;
+}
+
+.fowleyButton:hover {
+    background-color: #250daa;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton:hover > .downloadProjectFiles {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton:hover > span > .downloadSVG {
+    fill:white;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton .downloadSVG {
+    margin-left: 10px;
+}
+
+.fowleyButton:link, .fowleyButton:visited, .fowleyButton:hover, .fowleyButton:active {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: #250daa;
+}
+
+.fowleyButtonHidden {
+    display: none;
+}
+
+.pageHeaderImage {
+    width: 100%;
+}
+
+b {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.pageHref, .pageHref:active, .pageHref:hover, .pageHref:visited, .pageHref:link {
+    color:#250daa;
+}
+
+.pageParagraph {
+    font-size: 18px;
+    width:100%;
+    line-height: 1.6em;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.authorNote {
+    font-style: italic;
+
+}
+
+.pageSectionHeader {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: -10px;
+}
+
+.pageContentImage {
+    width:100%;
+}
+
+.imageDescription {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.articleEndFowleyIcon {
+    height: 18px;
+    width: auto;
+    display: inline;
+}
+
+.referencesList li {
+    margin-top: 15px;
+}
+
+.returnHomeEnd, .returnHomeEnd a:link, .returnHomeEnd a:hover, .returnHomeEnd a:visited, .returnHomeEnd a:active {
+    margin: 40px 0;
+    color: #4b4b4b;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+    .pageMain {
+        width: 100%
+    }
+
+    .pageTitle {
+        font-size: 28px;
+    }
+
+    .projectType {
+        font-size: 14px;
+    }
+
+    .fowleyButton {
+        padding: 4px 0;
+    }
+
+    .pageParagraph {
+        font-size: 16px;
+    }
+
+    .pageSectionHeader {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+}

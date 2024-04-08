@@ -1,0 +1,357 @@
+@font-face {
+    font-family: Teko;
+    src: url('../fonts/Teko/Teko-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: RedHat;
+    src: url('../fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src:url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lora;
+    src:url('../fonts/Lora/Lora-VariableFont_wght.ttf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    min-width: 400px;
+}
+
+.fowleyMain {
+    width: 1200px;
+    margin: 30px 0 10px 0;
+}
+
+.fowleyHomepageHeader {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fowleyPictureContainer {
+    width: 300px;
+    max-width: 300px;
+    margin-right: 20px;
+    display: flex;
+    align-self: end;
+}
+
+.fowleyPictureContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.fowleyIntro {
+    width: 850px;
+}
+
+.fowleyIntroParagraphDiv {
+    display: flex;
+    justify-content: start;
+    align-items: top;
+}
+
+.fowleyIntroParagraph {
+    width: 100%;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.introParagraphAccent {
+    font-weight: bold;
+    color: #250daa;
+    font-family: 'RedHat', 'Arial', sans-serif;
+}
+
+.fowleyGreeting {
+    font-family: 'Teko', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.notFowley {
+    display: inline;
+    color: #250daa;
+}
+
+.headerFowleyIcon {
+    display: inline;
+    height: 32px;
+    width: auto;
+}
+
+.fowleyLinksDiv {
+    width: 800px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.fowleyLinks {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.downloadSVG {
+    fill: #250daa;
+    height: 22px;
+    width: auto;
+    transition-duration: 0.3s;
+}
+
+.linkedinSVG {
+    fill: #250daa;
+    height: 20px;
+    width: auto;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton {
+    border: 2px solid #250daa;
+    border-radius: 4px;
+    padding: 6px 0;
+    width: 160px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+
+.fowleyButtonText {
+    transition-duration: 0.3s;
+}
+
+.fowleyButton:hover {
+    background-color: #250daa;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton:hover > .fowleyButtonText {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton:hover > span > .downloadSVG, .fowleyButton:hover > span > .linkedinSVG {
+    fill:white;
+    transition-duration: 0.3s;
+}
+
+.fowleyButton .downloadSVG, .fowleyButton .linkedinSVG {
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+.fowleyButton:link, .fowleyButton:visited, .fowleyButton:hover, .fowleyButton:active {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: #250daa;
+}
+
+.fowleyButtonHidden {
+    display: none;
+}
+
+.fowleyResumeButton {
+    margin-right: 20px;
+}
+
+.fowleyLinks a:link, .fowleyLinks a:visited, .fowleyLinks a:hover, .fowleyLinks a:active {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: #250daa;
+}
+
+.fowleyCaseStudies {
+    margin-top: 80px;
+}
+
+.fowleyCaseStudiesLinks {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.fowleyCaseStudiesLinks a, .fowleyCaseStudiesLinks a:active, .fowleyCaseStudiesLinks a:visited, .fowleyCaseStudiesLinks a:link, .fowleyCaseStudiesLinks a:hover {
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 2px 6px rgb(192, 192, 192);
+    margin-bottom: 24px;
+}
+
+.fowleyCaseStudiesLinks h2 {
+    text-align: center;
+    line-height: 1em;
+}
+
+.fowleyCaseStudiesLinks h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0 0 15px 0;
+}
+
+.oneCaseStudy {
+    height: auto;
+    width: 376px;
+    display: flex;
+    flex-direction: column;
+}
+
+.oddCaseStudy {
+    margin-right:34px;
+}
+
+.caseStudyImage {
+    height: auto;
+    width: 100%;
+}
+
+.caseStudyImage img {
+    width: 100%;
+}
+
+.caseStudyName {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.caseStudyDescription {
+    font-size: 18px;
+}
+
+
+
+
+
+/* TABLET VIEW */
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+
+    .fowleyMain {
+        width: 100%;
+    }
+
+    .fowleyIntroSectionForResponsive {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .fowleyHomepageHeader {
+        width: 800px;
+    }
+
+    .fowleyPictureContainer {
+        width: 280px;
+        min-width: 280px;
+        align-self: center;
+    }
+
+    .fowleyIntro {
+        width: 500px;
+    }
+
+    .fowleyGreeting {
+        margin-bottom: 10px;
+    }
+
+    .fowleyIntroParagraph {
+        font-size: 22px;
+        width: 600px;
+    }
+
+    .fowleyLinksDiv {
+        width: 100%;
+    }
+
+    .fowleyCaseStudiesLinks, .fowleyPapersLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .oneCaseStudy {
+        width: 49%;
+        margin-bottom: 24px;
+    }
+
+    .oddCaseStudy {
+        margin-right: 1%;
+    }
+}
+
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 799px) {
+
+    .fowleyGreeting {
+        margin-bottom: 0;
+    }
+
+    .fowleyIntroSectionForResponsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fowleyHomepageHeader {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fowleyPictureContainer {
+        width: 60%;
+        min-width: 260px;
+        max-width: 280px;
+        margin-right: 0;
+    }
+
+    .fowleyIntro {
+        width: 400px;
+    }
+
+    .fowleyIntroParagraph {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .fowleyLinksDiv {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fowleyCaseStudiesLinks, .fowleyPapersLinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oneCaseStudy, .onePaper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

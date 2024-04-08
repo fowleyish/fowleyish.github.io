@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/x-icon" href="FowleyFaviconScaled.ico">
+        <link href="./styles/pagesStyles.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Portfowleyo - Dentist scheduling platform</title>
+    </head>
+    <body>
+        <div class="pageContent">
+            <div class="backHome">
+                <a href="./index.html">Home</a> 
+                <span> > Dentist scheduling platform</span>
+            </div>
+            <h1 class="pageTitle">Dentist scheduling platform</h1>
+            <h2 class="projectType">Responsive Web Design <span class="titlePipe">|</span><svg class="timerIcon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m618.924-298.924 42.152-42.152-151.077-151.087V-680h-59.998v212.154l168.923 168.922ZM480.067-100.001q-78.836 0-148.204-29.92-69.369-29.92-120.682-81.21-51.314-51.291-81.247-120.629-29.933-69.337-29.933-148.173t29.92-148.204q29.92-69.369 81.21-120.682 51.291-51.314 120.629-81.247 69.337-29.933 148.173-29.933t148.204 29.92q69.369 29.92 120.682 81.21 51.314 51.291 81.247 120.629 29.933 69.337 29.933 148.173t-29.92 148.204q-29.92 69.369-81.21 120.682-51.291 51.314-120.629 81.247-69.337 29.933-148.173 29.933ZM480-480Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg><span></span> 10 minute read</h2>
+            <a href="./files/catShelterInventoryAppCaseStudy.zip" download class="fowleyButton fowleyButtonHidden"><span class="downloadProjectFiles">Download project files</span> <span><svg class="downloadSVG" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-322.87 268.521-534.348l63.892-65.413L434.5-497.435v-310.696h91v310.696l102.087-102.326 63.892 65.413L480-322.87ZM242.87-151.869q-37.783 0-64.392-26.609-26.609-26.609-26.609-64.392v-120h91.001v120h474.26v-120h91.001v120q0 37.783-26.609 64.392-26.609 26.609-64.392 26.609H242.87Z"/></svg></span></a>
+            <div class="pageMain">
+                <img class="pageHeaderImage" src="./images/dentistDesigns/dentistThumbnail.png">
+                <p class="pageParagraph">The goal of this project was to create a responsive website design for a fictional dentist collective. This project was a major deliverable for my enrollment in Google's <a href="https://www.credly.com/badges/efc5779c-9353-496d-b80c-e9ebb5996ec9/linked_in_profile" class="pageHref">UX Design Certificate program</a>; however, this was strictly focused on UI design and didn't engage the UX Design process. </p>
+                <p class="pageParagraph">A major feature of the design is the scheduling platform. After completing a brief competitive analysis, I discovered that many similar websites use third-party platforms for scheduling purposes that reroute the user to a new site with no clear way of going back. I also found that similar platforms didn't offer enough search cases when scheduling an appointment: for example, a scheduling wizard might force the user to start the query process with a time and date and then select a location, rather than giving the option to start searching by location. Finally, the smaller sites were loaded with accessibility and navigation issues, particularly color contrast and scaling issues for the former and multi-level navigation menus for the latter.</p>
+                <p class="pageParagraph">Therefore, it was important that my design met the following criteria:</p>
+                <ul>
+                  <li class="pageParagraph"><b>Appointment search supports multiple entry points.</b> At the start of the scheduling process, users are given the option to begin their search by 4 different verticals: search by provider, location, date, or service.</li>
+                  <li class="pageParagraph"><b>Clear and redundant navigation.</b> Though the scheduling wizard follows a sequential UI design pattern, users have multiple ways of returning to the last page, returning home, or starting the scheduling process over again. (In the actual site, I would use modal warnings when abandoning a partial query)</li>
+                  <li class="pageParagraph"><b>One interface for all needs.</b> While most competitors use reroutes and third-party systems for scheduling and billing services, my design does everything on one website, which would reduce confusion when users' navigation expectations break their mental models constructed from the initial website experience.</li>
+                  <li class="pageParagraph"><b>Accessible by design.</b> I consulted WCAG standards and used tools such as <a href="https://webaim.org/resources/contrastchecker/" target="_blank" class="pageHref">WebAIM's contrast checker</a> to improve the overall accessibility of the interface.</li>
+                </ul>
+                <p class="pageParagraph">Following the competitive analysis, I created a brief sitemap in Miro to begin structuring the information architecture:</p>
+                <img src="./images/dentistDesigns/siteMap.PNG" alt="An image of the dentist website site map, created in Miro." class="pageContentImage">
+                <h3 class="pageSectionHeader">Beginning the design process</h3>
+                <p class="pageParagraph">I began by sketching some pages on paper following a desktop-first design approach. While some might ostracize me for opting out of mobile-first, I had my reasons:</p> 
+                <ul>
+                  <li class="pageParagraph">I wanted to be able to maximize the amount of information on various features, such as provider detail cards, before deciding how to rearrange or hide information on smaller devices.</li>
+                  <li class="pageParagraph">Scheduling an appointment, to me, seems like a desktop activity. When presented with many options (for example, many providers), I believe that users would prefer a larger screen size for easier comparison. (I recognize this could also be untrue, and that beginning this process with UX research might have refuted this theory)</li>
+                </ul>
+                <p class="pageParagraph">At any rate, I sketched some options on paper for a few key pages, inspired by various design trends. Here's a small sample of early sketches of the home page:</p>
+                <img src="./images/dentistDesigns/homeSketches.jpg" alt="An image of two early paper sketches of the homepage for the dentist website." class="pageContentImage">
+                <p class="imageDescription">I always struggle with placing text over a hero image</p>
+                <h3 class="pageSectionHeader">Prototyping</h3>
+                <p class="pageParagraph">From here, I began creating digital wireframes using Adobe XD. I began first with the desktop version supporting one user flow: scheduling an appointment by provider. I then created a tablet version of the design and finished with a mobile version. Here's a comparison of one screen across all three device sizes:</p>
+                <img src="./images/dentistDesigns/schedulerWireframes.PNG" alt="An image showing digital wireframes of a page in the scheduling user flow across three different screen sizes: desktop, tablet, and mobile." class="pageContentImage">
+                <p class="imageDescription">I ended up regretting the double scrolling under "Available Appointments" and fixed it in the high fidelity prototype</p>
+                <p class="pageParagraph">Next, I created interactive prototypes for my mockups. The purpose of this exercise was to force myself to think through the redundancy of the navigation, which was a major goal of mine when starting this project. In wiring screens together, I found a few areas where I needed to add a "Back to last screen" or "Start over" button that I would have otherwise missed.</p>
+                <p class="pageParagraph">Finally, I completed the prototype by creating hifi mockups (sans specific language: Lorem Ipsum sufficed in this case) beginning with the desktop version and finishing with the mobile version. Figuring out how to simplify and condense information-heavy features was a challenge, but I relied on design elements such as "Show more" buttons to get through it. For example, on the desktop version of the providers list page, there's a lot of details for each provider in the list that would have taken up the entire screen on a mobile device. My philosophy here is "show them (the users) what they need, then give them the option to learn more," which required some reflection on understanding which details are most important for making an informed decision.</p>
+                <img src="./images/dentistDesigns/showThemWhatTheyNeed.png" alt="An image showing the difference between element layout on a provider (dentist) tile between desktop and mobile views. The desktop view has all information available immediately. The mobile view hides some of the less important details in a drop down accordion button. The image shows this drop down both collapsed and expanded with all the information. This exemplifies my philosophy 'show them what they need, then give them the option to learn more'." class="pageContentImage">
+                <p class="pageParagraph">Digital wireframes can be accessed here:</p>
+                <ul>
+                  <li class="pageParagraph"><a href="https://xd.adobe.com/view/6953950b-6781-44d0-9d07-090bddd369b9-3c00/?fullscreen" class="pageHref" target="_blank">Desktop</a></li>
+                  <li class="pageParagraph"><a href="https://xd.adobe.com/view/1e677777-cc5e-4d3b-843e-03af06d43fa5-4b34/?fullscreen" class="pageHref" target="_blank">Tablet</a></li>
+                  <li class="pageParagraph"><a href="https://xd.adobe.com/view/af49f364-1396-4670-b0d0-b79da2b36f31-fa1a/?fullscreen" class="pageHref" target="_blank">Mobile</a></li>
+                </ul>
+                <p class="pageParagraph">And high fidelity mockups can be accessed here:</p>
+                <ul>
+                  <li class="pageParagraph"><a href="https://xd.adobe.com/view/7c518289-83b4-4456-b7cd-6032b79b659e-2902/?fullscreen" class="pageHref" target="_blank">Desktop</a></li>
+                  <li class="pageParagraph"><a href="https://xd.adobe.com/view/42dbd7ed-b151-4af1-883a-3ada763436fa-1788/?fullscreen" class="pageHref" target="_blank">Mobile</a></li>
+                </ul>
+                <h3 class="pageSectionHeader">Retrospective</h3>
+                <p class="pageParagraph">As a strictly responsive design project, this exercise comes with many limitations, mainly that I have no current way of knowing whether this interface will be accepted by users. Therefore, designing and conducting a usability study would be the natural next step. With other search/filtering use cases modeled out, it would be interesting to see how folks search for information, which would in turn highlight new opportunities for improvement.</p>
+                <p class="pageParagraph">I think I achieved my goal with this project: sharpening my responsive design skills. This project made my think critically about the information architecture of a scheduling platform including all things from navigation to hierarchical structuring. I also had the oppotunity to imagine the various ways different types of users might prefer to schedule appointments. Finally, and most challenging of all, this project afforded me some great practice in scaling type and UI elements to the right screen size. It's not perfect—text seems a bit too large in some places, for example—but that's what practice is for, right? <span><?xml version="1.0" encoding="UTF-8"?>
+                  <svg class="articleEndFowleyIcon" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.97 213.57">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #29377b;
+                        }
+                  
+                        .cls-2 {
+                          fill: #d34e36;
+                        }
+                  
+                        .cls-3 {
+                          fill: #8e8e8e;
+                        }
+                  
+                        .cls-4 {
+                          fill: #a5a4a4;
+                        }
+                  
+                        .cls-5 {
+                          fill: #999;
+                        }
+                  
+                        .cls-6 {
+                          fill: #2b3990;
+                        }
+                      </style>
+                    </defs>
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <g>
+                        <g>
+                          <polygon class="cls-4" points="0 53.39 0 160.18 92.49 213.57 184.96 160.18 184.96 53.39 92.49 0 0 53.39"/>
+                          <g>
+                            <polygon class="cls-5" points="92.48 106.65 0 53.26 92.29 .13 184.97 53.64 92.48 106.65"/>
+                            <polygon class="cls-3" points="92.48 213.44 184.96 160.04 184.97 53.64 92.48 106.65 92.48 213.44"/>
+                          </g>
+                        </g>
+                        <polygon class="cls-6" points="38.47 171.94 10.47 155.56 10.47 59.32 38.47 75.48 38.47 171.94"/>
+                        <polygon class="cls-6" points="92.53 161.84 13.98 116.67 27.98 92.42 92.49 129.53 92.53 161.84"/>
+                        <polygon class="cls-2" points="146.27 172.44 174.27 156.06 174.27 59.5 146.27 75.98 146.27 172.44"/>
+                        <polygon class="cls-2" points="92.53 161.84 170.76 116.67 156.76 92.42 92.49 129.53 92.53 161.84"/>
+                        <polygon class="cls-1" points="106.5 36.3 38.47 75.57 10.47 59.32 92.5 12.05 106.5 36.3"/>
+                        <polygon class="cls-1" points="78.56 36.3 146.27 75.98 174.27 59.5 92.56 12.05 78.56 36.3"/>
+                      </g>
+                    </g>
+                  </svg>
+              </span></p>
+            </div>
+            <div class="returnHomeEnd">
+                <a href="./index.html">
+                    << Return Home
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
