@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/x-icon" href="FowleyFaviconScaled.ico">
+        <link href="./styles/pagesStyles.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Portfowleyo - Understanding perceptions of Spotify's AI DJ</title>
+    </head>
+    <body>
+        <div class="pageContent">
+            <div class="backHome">
+              <a href="./index">Home</a> 
+              <span> > Spotify's AI DJ</span>
+            </div>
+            <h1 class="pageTitle">Understanding users' perceptions of Spotify's AI DJ</h1>
+            <h2 class="projectType">Qualitative research <span class="titlePipe">|</span><svg class="timerIcon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m618.924-298.924 42.152-42.152-151.077-151.087V-680h-59.998v212.154l168.923 168.922ZM480.067-100.001q-78.836 0-148.204-29.92-69.369-29.92-120.682-81.21-51.314-51.291-81.247-120.629-29.933-69.337-29.933-148.173t29.92-148.204q29.92-69.369 81.21-120.682 51.291-51.314 120.629-81.247 69.337-29.933 148.173-29.933t148.204 29.92q69.369 29.92 120.682 81.21 51.314 51.291 81.247 120.629 29.933 69.337 29.933 148.173t-29.92 148.204q-29.92 69.369-81.21 120.682-51.291 51.314-120.629 81.247-69.337 29.933-148.173 29.933ZM480-480Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg><span></span> 15 minute read</h2>
+            <a href="./files/catShelterInventoryAppCaseStudy.zip" download class="fowleyButton fowleyButtonHidden"><span class="downloadProjectFiles">Download project files</span> <span><svg class="downloadSVG" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-322.87 268.521-534.348l63.892-65.413L434.5-497.435v-310.696h91v310.696l102.087-102.326 63.892 65.413L480-322.87ZM242.87-151.869q-37.783 0-64.392-26.609-26.609-26.609-26.609-64.392v-120h91.001v120h474.26v-120h91.001v120q0 37.783-26.609 64.392-26.609 26.609-64.392 26.609H242.87Z"/></svg></span></a>
+            <div class="pageMain">
+                <img class="pageHeaderImage" src="./images/DJ/djBannerImage.png" alt="A promotional image showing some screens of Spotify's new AI DJ feature, which is the focus of this article.">
+                <p class="imageDescription">Image source: Spotify</p>
+                <p class="pageParagraph"><a href="https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket/" target="_blank" class="pageHref">Spotify's AI DJ</a>, released in February 2023, is a beta feature available in-app that combines generative AI (genAI) and recommender system (RS) algorithms to provide users with new and familiar music in a hassle-free format. As a course project for a qualitative UX research class in my graduate program in Human Computer Interaction at Iowa State University, I chose to conduct generative research to better understand Spotify users' perceptions of the new feature. Though there is plenty of existing research on genAI and RSs individually, this is the first consumer-facing application of its kind to combine the two in such an explicit way; algorithmic chatbot applications like ChatGPT are probably the next closest comparison, but DJ is the first to use genAI to put an actual, literal voice to the AI while still recommending content to users. Companies continue to rush towards innovations using genAI in a breadth of use cases and Spotify's DJ begs the question: <b>Is it working?</b></p>
+
+                <h3 class="pageSectionHeader">How DJ works</h3>
+
+                <p class="pageParagraph">DJ is a new feature that, after starting a session, provides users sets of five or six songs (I call them mixes) vocally introduced and closed by a virtual DJ (named DJ X). Mixes are grouped based on themes such as what the user has been listening to recently, what the user listened to during a previous timeframe (e.g., songs from 2018), “vibes” (e.g., a chill vibe, or an upbeat vibe), artists the AI knows they already like, and more. Each mix starts with an introduction from DJ X, which usually is just a description of the mix theme, but sometimes goes into more detail on the artists and songs that follow. DJ X closes each mix with a quick statement (usually something like “Closing out this set with [artist name]”), then moves on to introducing the next mix. Rinse, repeat.  </p>
+
+                <div class="smallImageContainer">
+                  <img src="./images/DJ/usingDJ.gif" class="djGif" alt="A GIF image showing a user opening DJ. DJ X says a few words and then puts on a mix. The user skips the first song, then presses the Remix button to start a new mix. DJ introduces the new mix.">
+                </div>
+                <div class="imageDescription">Opening DJ and rerolling the mix on a mobile device</div>
+
+                <p class="pageParagraph">Users have limited control over DJ, namely just skipping tracks in individual mixes or rerolling into a new mix with the Remix button at the bottom right (pictured below). The same controls are available on both desktop and mobile devices. However, the content of each mix and mix themes are virtually uncontrollable and instead are selected by the algorithm based on what it thinks each user might want to listen to. One major goal of any RS is to keep users engaged with content it thinks they'll like; social media platforms have been using RSs for decades, and they've been growing in popularity. For example, TikTok's backbone is its RS; it's the thing that shows you new videos from creators you're unfamiliar with, and its underlying logic is the reason why it's so hard to close TikTok and catch some sleep.</p>
+                <p class="pageParagraph">What interested me most about Spotify's DJ was how dramatically different it is from other personalized content on the platform. Discover Weekly relies on Spotify's RS to curate a weekly playlist of novel content it thinks the user might like, as do so many other features in Spotify, but this is the first time they've put a literal name and voice to its algorithm. As someone who's spent a decent amount of time researching all things AI, I began to wonder what others with less domain knowledge thought of this personification of the AI. Has DJ made people think more about the algorithm? Has this changed how people think about and interact with Spotify overall?</p>
+
+                <h3 class="pageSectionHeader">Research purpose, methods, and analysis</h3>
+
+                <p class="pageParagraph">I approached this study with three primary research questions:</p>
+                
+                <ol>
+                  <li class="pageParagraph">What are Spotify users' perceptions of AI DJ, and does DJ use influence other listening habits?</li>
+                  <li class="pageParagraph">When do Spotify users use AI DJ, and when do they choose to use different features?</li>
+                  <li class="pageParagraph">What are Spotify users' perceptions of the generative AI voice that guides DJ sessions?</li>
+                </ol>
+                <p class="pageParagraph">As a requirement for the project, I used semi-structured qualitative interviews (SSQIs) as the data collection method. I recruited 7 research participants for these SSQIs (I recognize having only spoken to 7 people transforms the nature of these findings into preliminary themes that require further exploration; more on study limitations below). Each participant was a long-time Spotify user (free or premium subscription) that has used DJ at least 4 times overall, the last time being no longer than one month prior to the interview date. I utilized convenience sampling by findings participants in my immediate networks (personal, school, professional) due to having no budget or other resources to conduct this research. Participant and interview details are below.</p>
+                
+                <img src="./images/DJ/DJparticipantDetails.PNG" alt="An image showing a table of participants recruited for this study. Seven participants were interviewed. Interviews took place over Microsoft Teams and Zoom. Two interviews took place in person. Participants were found in person and on online platforms such as Instagram and LinkedIn. All participants met the recruitment critera." class="pageContentImage">
+
+                <p class="pageParagraph">Following data collection, I transcribed all interviews and conducted a thematic analysis using a bottom-up (inductive) approach. I used <a href="https://www.taguette.org/" target="_blank" class="pageHref">Taguette</a>, a free and open-source qualitative analysis platform, to manage all codes and transcripts. While I do not believe that I attained complete meaning saturation due to only having spoken to 7 individuals, I identified 39 out of 47 codes (~83%) after coding only 2 transcripts, and 43 out of 47 codes (~91%) appeared in two or more transcripts, which suggests I reached code saturation. As the sole analyst and researcher on this study, I used the following methods to curb interpretive bias:</p>
+                <ul>
+                  <li class="pageParagraph">I read through each transcript a second time as if I were another participant (e.g., I re-read P1's transcript as if I were P3). This enabled me to empathize with differing perspectives by situating each sentiment in another's likely interpretation. </li>
+                  <li class="pageParagraph">I practiced reflexivity by keeping my analysis mindset focused on the fun and playful aspects of DJ, rather than the critical mindset I usually apply to AI-driven technologies as an academic studying trust and ethical concerns in AI and automation.</li>
+                </ul>
+
+                <p class="pageParagraph">A few exciting themes emerged as I completed my analysis.</p>
+
+                <h3 class="pageSectionHeader">Key findings</h3>
+                <h4 class="subSectionHeader">1. DJ simultaneously doesn't understand me and knows me better than I know myself</h4>
+                <p class="pageParagraph">This was a contradiction I found in nearly all interviews: most participants trusted and relied on DJ to play familiar music that they already like, but also acknowledged at different points in the interview that they don't think DJ has a good handle on them or their preferences. Some felt mischaracterized by the algorithm. Others began questioning how the algorithm comes to certain conclusions about them and their listening habits. Take this quote from P1:</p>
+                <p class="userQuote">"I think it's funny. He's like, 'this is your Wednesday 4pm vibe.' And I didn't realize I had a vibe." <span class="quotedBy">(P1)</span> </p>
+                <p class="pageParagraph">P1 trusted DJ to play music they liked, but also didn't understand the mechanisms that created their digital profile of listening habits. They also mentioned that this was the first time they thought about these mechanisms, which suggests that the famous black-box nature AI is becoming a more popular/visible topic in the public eye.</p>
+                <h4 class="subSectionHeader">2. I use DJ when I don't want to think</h4>
+                <p class="pageParagraph">Most participants shared that their favorite use case for DJ is simply not having to think about what to play. Spotify is vast, as are music tastes. This vastness begets analysis paralysis for some. Many participants shared that they put DJ on when they're working on trivial tasks like driving or cleaning and don't want the added burden of needing to decide what to listen to. They trust DJ to be inoffensive enough for easy listening in situations where they're not interested in active listening sessions. As P2 puts it, many just want DJ to “play music at them” without any extraneous effort.</p>
+                <h4 class="subSectionHeader">3. DJ has fundamentally changed how I listen to music</h4>
+                <p class="pageParagraph">This finding was the most surprising and interesting to me. As P4 shared, people “know that the algorithm is watching … in a more direct way than it was before.” In some cases, this has made people think twice about clicking around on random songs or exploring artists they're unfamiliar with because they're afraid of sending inaccurate messaging to DJ. P1 said it best:</p>
+                <p class="userQuote">“I was thinking the other day of how quickly it picks up on something new that you listen to. Which is kind of annoying because I was going through some movie soundtracks, and now I'm just getting inundated with all sorts of stuff I don't actually want to listen to…sometimes when I'm searching and playing stuff I have a thought: 'Is this going to screw up my DJ?'” <span class="quotedBy">(P1)</span> </p>
+                <p class="pageParagraph">Spotify should take note of this. Some users even shared that they'll explore new music on competing platforms like YouTube to avoid inadvertently influencing the AI which, of course, is probably something the folks at Spotify don't want happening. This finding begs a new question: Where should the RS draw the line between personalizing content and allowing users the freedom of exploration?</p>
+
+                <h4 class="subSectionHeader">4. Is DJ X necessary?</h4>
+                <p class="pageParagraph">Opinions on the utility and added value of DJ X, the genAI DJ voice that guides users through DJ sessions, were panned. Some see DJ X as a friend or companion on long drives. Others find DJ X to be intrusive and disruptive to the listening experience, wishing instead for an uninterrupted listening experience. </p>
+
+                <h4 class="subSectionHeader">5. We want more control</h4>
+                <p class="pageParagraph">Almost all participants expressed a desire for more control over the various facets of DJ. Many participants want to change its voice, such as how Amazon Alexa users can customize the gender and accent of the voice on their devices. Some users want more control over the content of the mixes, such as entering a brief prompt to set the vibe or selecting starting points with an artist or song. Most participants shared that, while they don't always love the mixes DJ provides, there are times where they wish a mix didn't end, and wish they had an option to keep a good mix going indefinitely. Finally, most participants expressed a desire for an easier way to communicate to the algorithm that they don't like a song or artist; they want a way to blacklist things they don't like.</p>
+                <p class="userQuote">“Something with Spotify I've noticed is it doesn't necessarily take into account music that you don't like…say you don't like a certain artist, I've struggled getting rid of those [in mixes].” <span class="quotedBy">(P6)</span></p>
+
+                <h3 class="pageSectionHeader">Implications for Spotify</h3>
+                <p class="pageParagraph">This study, though preliminary, suggests area for further research for the design teams at Spotify so they can continue to improve the DJ experience:</p>
+                <ul>
+                  <li class="pageParagraph">User controls, outlined above in <b>We want more control</b>, should be explored and perhaps piloted with targeted groups of users. These controls should be optional, since requiring input might undermine the utility of having DJ pick something for you, but might solve a lot of problems for a lot of people.</li>
+                  <li class="pageParagraph">This study suggests that DJ has provided a degree of insight into the power of Spotify's acquisition algorithm that general-purpose users have never thought about. Thus, it might be necessary for Spotify to elucidate, in plain language, when and how listening data is collected and how profiles of users' listening preferences are constructed.</li>
+                  <li class="pageParagraph">Further, users should have more clear direction on how to explore music in Spotify without fear of influencing the algorithm so that they do not feel tempted to take their exploration to competing services.</li>
+                  <li class="pageParagraph">Finally, some experimentation might be necessary to find the proper balance of DJ X's presence. Some participants in this sample find it intrusive and disruptive to their listening experience, so some effort should be put into discovering how to make DJ X more engaging and contributive to the DJ experience.</li>
+                </ul>
+
+                <h3 class="pageSectionHeader">Limitations and lessons learned</h3>
+                <p class="pageParagraph">Convenience sampling is not ideal for this type of study. Future work should opt for near-random sampling to get the best breadth of sentiments from users. Additionally, repeating this study in different countries might prove useful, especially since DJ is still in its beta release and is being released in phases to international markets. </p>
+                <p class="pageParagraph">I learned a lot about qualitative research with this project. I struggled at the beginning with structuring this study to maximize the benefits of generative research; I tend to want to find a connection, a relationship between moving pieces to build some sort of predictive model. This, of course, is not the goal of qualitative research. However, I'm pleased with the results and find that they've made me think of questions I wouldn't have considered without this study. For example: Is there a relationship between motivations for using DJ and, say, a listener's desire to explore new music? This is one of many resulting questions that would be best answered with continued controlled experimentation. It is my hope that, with this research, curious minds at Spotify find the right questions to focus on towards making DJ the best service it can possibly be. 
+                </p>
+
+                <p class="pageParagraph">There's a brief presentation covering this study below. A full report is <a href="./files/FowleAlexander_HCI523_FinalReport.pdf" download target="_blank" class="pageHref">available for download here</a>.<span><?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="articleEndFowleyIcon" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.97 213.57">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #29377b;
+                          }
+                    
+                          .cls-2 {
+                            fill: #d34e36;
+                          }
+                    
+                          .cls-3 {
+                            fill: #8e8e8e;
+                          }
+                    
+                          .cls-4 {
+                            fill: #a5a4a4;
+                          }
+                    
+                          .cls-5 {
+                            fill: #999;
+                          }
+                    
+                          .cls-6 {
+                            fill: #2b3990;
+                          }
+                        </style>
+                      </defs>
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <g>
+                          <g>
+                            <polygon class="cls-4" points="0 53.39 0 160.18 92.49 213.57 184.96 160.18 184.96 53.39 92.49 0 0 53.39"/>
+                            <g>
+                              <polygon class="cls-5" points="92.48 106.65 0 53.26 92.29 .13 184.97 53.64 92.48 106.65"/>
+                              <polygon class="cls-3" points="92.48 213.44 184.96 160.04 184.97 53.64 92.48 106.65 92.48 213.44"/>
+                            </g>
+                          </g>
+                          <polygon class="cls-6" points="38.47 171.94 10.47 155.56 10.47 59.32 38.47 75.48 38.47 171.94"/>
+                          <polygon class="cls-6" points="92.53 161.84 13.98 116.67 27.98 92.42 92.49 129.53 92.53 161.84"/>
+                          <polygon class="cls-2" points="146.27 172.44 174.27 156.06 174.27 59.5 146.27 75.98 146.27 172.44"/>
+                          <polygon class="cls-2" points="92.53 161.84 170.76 116.67 156.76 92.42 92.49 129.53 92.53 161.84"/>
+                          <polygon class="cls-1" points="106.5 36.3 38.47 75.57 10.47 59.32 92.5 12.05 106.5 36.3"/>
+                          <polygon class="cls-1" points="78.56 36.3 146.27 75.98 174.27 59.5 92.56 12.05 78.56 36.3"/>
+                        </g>
+                      </g>
+                    </svg>
+                </span></p>
+
+                <div class="fowleyVideoContainer">
+                  <iframe class="fowleyVideo" src="https://www.youtube.com/embed/_KCnKEr-tFA?si=QQv8kS8L1oeBlaJN" title="Spotify DJ video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="returnHomeEnd">
+                <a href="./index">
+                    << Return Home
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

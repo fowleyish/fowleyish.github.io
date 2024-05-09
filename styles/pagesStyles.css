@@ -155,6 +155,25 @@ b {
     margin-bottom: -10px;
 }
 
+.subSectionHeader {
+    font-size: 20px;
+    color: #250daa;
+    margin-bottom: -6px;
+    margin-top: 30px;
+}
+
+.userQuote {
+    font-size: 18px;
+    color: #6d6d6d;
+    margin-left: 40px;
+    line-height: 1.6em;
+    font-weight: semibold;
+}
+
+.quotedBy {
+    font-weight: bold;
+}
+
 .pageContentImage {
     width:100%;
 }
@@ -163,7 +182,7 @@ b {
     text-align: center;
     font-size: 14px;
     font-style: italic;
-    margin-top: 0;
+    margin-top: 8px;
 }
 
 .articleEndFowleyIcon {
@@ -178,6 +197,26 @@ b {
 
 .referencesList a {
     word-break: break-all;
+}
+
+.fowleyVideoContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.fowleyVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.smallImageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .returnHomeEnd, .returnHomeEnd a:link, .returnHomeEnd a:hover, .returnHomeEnd a:visited, .returnHomeEnd a:active {
@@ -212,5 +251,9 @@ b {
     .pageSectionHeader {
         font-size: 20px;
         margin-top: 40px;
+    }
+
+    .subSectionHeader {
+        font-size: 18px;
     }
 }
