@@ -56,6 +56,10 @@ body {
     font-weight: 600;
 }
 
+.pageHref, .pageHref:active, .pageHref:hover, .pageHref:visited, .pageHref:link {
+    color:#4b2bff;
+}
+
 .fowleyGreeting {
     font-family: 'Lato';
     font-size: 20px;
