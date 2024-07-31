@@ -1,44 +1,40 @@
-@font-face {
-    font-family: Teko;
-    src: url('../fonts/Teko/Teko-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: RedHat;
-    src: url('../fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: Roboto;
-    src:url('../fonts/Roboto/Roboto-Regular.ttf');
-}
-
-@font-face {
-    font-family: Lora;
-    src:url('../fonts/Lora/Lora-VariableFont_wght.ttf');
-}
-
 body {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', Helvetica, sans-serif;
     min-width: 400px;
+    background-color: rgb(236, 236, 236);
+    font-family: 'Lato', sans-serif;
 }
 
 .fowleyMain {
     width: 1200px;
     margin: 30px 0 10px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
 }
 
-.fowleyHomepageHeader {
-    display: flex;
-    flex-wrap: wrap;
+
+
+/* Sidebar styles */
+
+
+
+.fowleyIntro {
+    width: 380px;
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 37px;
+}
+
+.fowleyIntroContainer {
+    width: 320px;
 }
 
 .fowleyPictureContainer {
     width: 300px;
     max-width: 300px;
-    margin-right: 20px;
     display: flex;
     align-self: end;
 }
@@ -48,34 +44,22 @@ body {
     height: auto;
 }
 
-.fowleyIntro {
-    width: 850px;
-}
-
-.fowleyIntroParagraphDiv {
-    display: flex;
-    justify-content: start;
-    align-items: top;
-}
-
 .fowleyIntroParagraph {
-    width: 100%;
-    margin-top: 0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
-    font-family: 'Lora', 'Times New Roman', serif;
+    text-align: left;
 }
 
 .introParagraphAccent {
     font-weight: bold;
     color: #250daa;
-    font-family: 'RedHat', 'Arial', sans-serif;
+    font-weight: 600;
 }
 
 .fowleyGreeting {
-    font-family: 'Teko', 'Arial', sans-serif;
-    font-weight: 500;
-    font-size: 52px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600px;
     margin-top: 0px;
     margin-bottom: 15px;
 }
@@ -91,267 +75,290 @@ body {
     width: auto;
 }
 
-.fowleyLinksDiv {
-    width: 800px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.homepageDivider {
+    height: 0;
+    color: gray;
+    width: 99%;
 }
 
-.fowleyLinks {
-    display: flex;
-    justify-content: start;
-    flex-wrap: nowrap;
-}
 
-.downloadSVG {
-    fill: #250daa;
-    height: 22px;
-    width: auto;
-    transition-duration: 0.3s;
-}
 
-.linkedinSVG {
-    fill: #250daa;
-    height: 20px;
-    width: auto;
-    transition-duration: 0.3s;
+/* Button styles */
+
+
+
+.fowleyButtonContainer {
+    padding: 10px 0 5px 0;
 }
 
 .fowleyButton {
-    border: 2px solid #250daa;
-    border-radius: 4px;
-    padding: 6px 0;
+    border-radius: 8px;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
     width: 160px;
+    height: 40px;
     cursor: pointer;
-    text-align: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.3s;
+    z-index: 3;
+}
+
+.buttonBottomLayer {
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 1px rgb(206, 206, 206);
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    width: 160px;
+    height: 40px;
+}
+
+.buttonLayerAccent {
+    height: 40px;
+    position: absolute;
+    background-color: #250daa;
+    border-radius: 8px 0 0 8px;
+    width: 10px;
+    z-index: 2;
 }
 
 .fowleyButtonText {
-    transition-duration: 0.3s;
+    line-height: 40px;
+    padding-left: 30px;
+    font-weight: bold;
+    display: inline-block;
 }
 
-.fowleyButton:hover {
-    background-color: #250daa;
-    transition-duration: 0.3s;
-}
-
-.fowleyButton:hover > .fowleyButtonText {
-    color: white;
-    transition-duration: 0.3s;
-}
-
-.fowleyButton:hover > span > .downloadSVG, .fowleyButton:hover > span > .linkedinSVG {
-    fill:white;
-    transition-duration: 0.3s;
-}
-
-.fowleyButton .downloadSVG, .fowleyButton .linkedinSVG {
-    margin-left: 10px;
-    vertical-align: baseline;
-}
-
-.fowleyButton:link, .fowleyButton:visited, .fowleyButton:hover, .fowleyButton:active {
-    font-size: 16px;
+.fowleyButtonContainer a:link, .fowleyButtonContainer a:visited, .fowleyButtonContainer a:hover, .fowleyButtonContainer a:active {
+    font-size: 14px;
     text-transform: uppercase;
-    font-weight: 500;
     text-decoration: none;
     color: #250daa;
 }
 
-.fowleyButtonHidden {
-    display: none;
+.buttonSVG {
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+    position: absolute; 
+    right: 16px;
+    display: inline-block;
 }
 
-.fowleyResumeButton {
-    margin-right: 20px;
-}
 
-.fowleyLinks a:link, .fowleyLinks a:visited, .fowleyLinks a:hover, .fowleyLinks a:active {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-decoration: none;
-    color: #250daa;
-}
+
+/* Case studies styling */
+
+
 
 .fowleyCaseStudies {
-    margin-top: 80px;
+    width: 800px;
 }
 
-.fowleyCaseStudiesLinks {
+.projectsHeader {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.caseStudiesCards {
     display: flex;
-    margin-top: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: start;
-    align-items: baseline;
+    align-content: start;
 }
 
-.fowleyCaseStudiesLinks a, .fowleyCaseStudiesLinks a:active, .fowleyCaseStudiesLinks a:visited, .fowleyCaseStudiesLinks a:link, .fowleyCaseStudiesLinks a:hover {
+.fowleyCaseStudies a, .fowleyCaseStudies a:active, .fowleyCaseStudies a:visited, .fowleyCaseStudies a:link, .fowleyCaseStudies a:hover {
     text-decoration: none;
     color: black;
-    box-shadow: 1px 2px 6px rgb(192, 192, 192);
-    margin-bottom: 24px;
-}
-
-.fowleyCaseStudiesLinks h2 {
-    text-align: center;
-    line-height: 1em;
-}
-
-.fowleyCaseStudiesLinks h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: lighter;
-    margin: 0 0 15px 0;
 }
 
 .oneCaseStudy {
-    height: auto;
+    height: 280px;
     width: 376px;
     display: flex;
+    margin: 12px;
     flex-direction: column;
-}
-
-.oddCaseStudy {
-    margin-right:34px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 2px 4px 1px rgb(206, 206, 206);
 }
 
 .caseStudyImage {
-    height: auto;
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .caseStudyImage img {
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 .caseStudyName {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1em;
 }
 
 .caseStudyDescription {
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    font-weight: 300;
 }
 
+
+
+
+/* MINIMIZED DESKTOP VIEW */
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    
+    .fowleyMain {
+        width: 800px;
+    }
+
+    .fowleyCaseStudies {
+        width: 400px;
+    }
+}
 
 
 
 
 /* TABLET VIEW */
 
-@media only screen and (max-width: 1200px) and (min-width: 800px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
 
     .fowleyMain {
         width: 100%;
-    }
-
-    .fowleyIntroSectionForResponsive {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-    }
-
-    .fowleyHomepageHeader {
-        width: 800px;
-    }
-
-    .fowleyPictureContainer {
-        width: 280px;
-        min-width: 280px;
-        align-self: center;
+        flex-flow: column nowrap;
     }
 
     .fowleyIntro {
-        width: 500px;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        top: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .fowleyIntroContainer {
+        width: 80%;
     }
 
     .fowleyGreeting {
-        margin-bottom: 10px;
+        text-align: center;
     }
 
-    .fowleyIntroParagraph {
-        font-size: 22px;
-        width: 600px;
+    .fowleyLinks {
+        display: flex;
+        flex-flow: row wrap;
     }
 
-    .fowleyLinksDiv {
+    .fowleyButtonContainer {
+        padding: 6px 8px 12px 0;
+    }
+
+    .fowleyCaseStudies {
         width: 100%;
     }
 
-    .fowleyCaseStudiesLinks, .fowleyPapersLinks {
+    .caseStudiesCards {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: start;
     }
 
     .oneCaseStudy {
-        width: 49%;
-        margin-bottom: 24px;
+        margin: 8px;
     }
 
-    .oddCaseStudy {
-        margin-right: 1%;
+    .homepageDivider {
+        height: 1px;
+        width: 100%;
+        background-color: rgb(209, 209, 209);
+        margin-top: 16px;
     }
+
 }
+
 
 
 
 /* MOBILE VIEW */
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 767px) {
 
-    .fowleyGreeting {
-        margin-bottom: 0;
-    }
-
-    .fowleyIntroSectionForResponsive {
-        display: flex;
-        justify-content: center;
-    }
-
-    .fowleyHomepageHeader {
+    .fowleyMain {
         width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .fowleyPictureContainer {
-        width: 60%;
-        min-width: 260px;
-        max-width: 280px;
-        margin-right: 0;
+        flex-flow: column nowrap;
     }
 
     .fowleyIntro {
-        width: 400px;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        top: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .fowleyIntroContainer {
+        width: 100%;
+    }
+
+    .fowleyGreeting {
+        text-align: center;
+    }
+
+    .fowleyLinks {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .fowleyButtonContainer {
+        padding: 4px;
+    }
+
+    .fowleyCaseStudies {
+        width: 100%;
+    }
+
+    .caseStudiesCards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: start;
+    }
+
+    .oneCaseStudy {
+        margin-top: 6px;
+    }
+
+    .homepageDivider {
+        height: 1px;
+        width: 100%;
+        background-color: rgb(209, 209, 209);
+        margin-top: 20px;
+    }
+
+    .fowleyButton, .buttonBottomLayer {
+        width: 300px;
     }
 
     .fowleyIntroParagraph {
-        font-size: 20px;
-        width: 400px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
     }
 
-    .fowleyLinksDiv {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .fowleyCaseStudiesLinks, .fowleyPapersLinks {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .oneCaseStudy, .onePaper {
-        width: 100%;
-        margin-bottom: 30px;
-    }
 }

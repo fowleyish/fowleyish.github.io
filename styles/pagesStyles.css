@@ -1,23 +1,9 @@
-@font-face {
-    font-family: BakbakOne;
-    src: url('../fonts/Bakbak_One/BakbakOne-Regular.ttf');
-}
-
-@font-face {
-    font-family: Roboto;
-    src:url('../fonts/Roboto/Roboto-Regular.ttf');
-}
-
-@font-face {
-    font-family: Lora;
-    src:url('../fonts/Lora/Lora-VariableFont_wght.ttf');
-}
-
 body {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', Helvetica, sans-serif;
     min-width: 400px;
+    background-color: rgb(236, 236, 236);
+    font-family: 'Lato', sans-serif
 }
 
 .pageMain {
@@ -28,14 +14,6 @@ body {
 .titlePipe {
     margin: 0 12px;
 }
-
-.articleStartFowleyIcon {
-    height: 20px;
-    width: auto;
-    display:inline-block;
-    align-self: center;
-}
-
 
 .backHome {
     margin-top: 20px;
@@ -52,15 +30,16 @@ body {
 }
 
 .pageTitle {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .projectType, .timerIcon {
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
-    color:#4e4e4e;
-    font-size: 16px;
-    fill: #4e4e4e;
+    color:#3a3a3a;
+    font-size: 14px;
+    fill: #3e3e3e;
     height: 16px;
     
 }
@@ -69,68 +48,66 @@ body {
     width: 900px;
 }
 
-.downloadSVG {
-    fill: #250daa;
-    height: 22px;
-    width: auto;
-    transition-duration: 0.3s;
-}
+/* Button styling */
 
 .fowleyButton {
-    border: 2px solid #250daa;
-    border-radius: 4px;
-    padding: 6px 0;
-    width: 300px;
+    border-radius: 8px;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 40px;
     cursor: pointer;
-    text-align: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.3s;
+    z-index: 3;
 }
 
-.downloadProjectFiles {
-    transition-duration: 0.3s;
+.buttonBottomLayer {
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 1px rgb(206, 206, 206);
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    width: 280px;
+    height: 40px;
 }
 
-.fowleyButton:hover {
+.buttonLayerAccent {
+    height: 40px;
+    position: absolute;
     background-color: #250daa;
-    transition-duration: 0.3s;
+    border-radius: 8px 0 0 8px;
+    width: 10px;
+    z-index: 2;
 }
 
-.fowleyButton:hover > .downloadProjectFiles {
-    color: white;
-    transition-duration: 0.3s;
+.fowleyButtonText {
+    line-height: 40px;
+    padding-left: 30px;
+    font-weight: bold;
+    display: inline-block;
 }
 
-.fowleyButton:hover > span > .downloadSVG {
-    fill:white;
-    transition-duration: 0.3s;
-}
-
-.fowleyButton .downloadSVG {
-    margin-left: 10px;
-}
-
-.fowleyButton:link, .fowleyButton:visited, .fowleyButton:hover, .fowleyButton:active {
-    font-size: 16px;
+.fowleyButtonContainer a:link, .fowleyButtonContainer a:visited, .fowleyButtonContainer a:hover, .fowleyButtonContainer a:active {
+    font-size: 14px;
     text-transform: uppercase;
-    font-weight: 500;
     text-decoration: none;
     color: #250daa;
+    font-weight: 600;
 }
 
-.fowleyButtonHidden {
-    display: none;
+.buttonSVG {
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+    position: absolute; 
+    right: 16px;
+    display: inline-block;
 }
+
+/* END BUTTON STYLING */
 
 .pageHeaderImage {
     width: 100%;
-}
-
-b {
-    font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .pageHref, .pageHref:active, .pageHref:hover, .pageHref:visited, .pageHref:link {
@@ -138,10 +115,9 @@ b {
 }
 
 .pageParagraph {
-    font-size: 18px;
+    font-size: 16px;
     width:100%;
     line-height: 1.6em;
-    font-family: 'Lora', 'Times New Roman', serif;
 }
 
 .authorNote {
@@ -150,21 +126,21 @@ b {
 }
 
 .pageSectionHeader {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 60px;
     margin-bottom: -10px;
 }
 
 .subSectionHeader {
-    font-size: 20px;
+    font-size: 17px;
     color: #250daa;
     margin-bottom: -6px;
     margin-top: 30px;
 }
 
 .userQuote {
-    font-size: 18px;
-    color: #6d6d6d;
+    font-size: 16px;
+    color: #5343af;
     margin-left: 40px;
     line-height: 1.6em;
     font-weight: semibold;
@@ -180,13 +156,13 @@ b {
 
 .imageDescription {
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
     margin-top: 8px;
 }
 
 .articleEndFowleyIcon {
-    height: 18px;
+    height: 16px;
     width: auto;
     display: inline;
 }
@@ -233,27 +209,23 @@ b {
     }
 
     .pageTitle {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .projectType {
-        font-size: 14px;
-    }
-
-    .fowleyButton {
-        padding: 4px 0;
+        font-size: 12px;
     }
 
     .pageParagraph {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .pageSectionHeader {
-        font-size: 20px;
-        margin-top: 40px;
+        font-size: 16px;
+        margin-top: 36px;
     }
 
     .subSectionHeader {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
