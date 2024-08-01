@@ -33,15 +33,13 @@ body {
 }
 
 .fowleyPictureContainer {
-    width: 300px;
-    max-width: 300px;
     display: flex;
-    align-self: end;
+    justify-content: center;
 }
 
 .fowleyPictureContainer img {
-    width: 100%;
-    height: auto;
+    width: 240px;
+    margin-bottom: 30px;
 }
 
 .fowleyIntroParagraph {
