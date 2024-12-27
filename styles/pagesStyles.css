@@ -45,7 +45,7 @@ body {
 }
 
 .pageContent {
-    width: 900px;
+    width: 700px;
 }
 
 /* Button styling */
@@ -115,7 +115,7 @@ body {
 }
 
 .pageParagraph {
-    font-size: 16px;
+    font-size: 18px;
     width:100%;
     line-height: 1.6em;
 }
@@ -217,15 +217,15 @@ body {
     }
 
     .pageParagraph {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .pageSectionHeader {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 36px;
     }
 
     .subSectionHeader {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
