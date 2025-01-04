@@ -23,8 +23,6 @@ body {
 .fowleyIntro {
     width: 380px;
     padding: 10px;
-    position: -webkit-sticky;
-    position: sticky;
     top: 37px;
 }
 
@@ -353,7 +351,7 @@ body {
     }
 
     .fowleyButton, .buttonBottomLayer {
-        width: 300px;
+        width: 200px;
     }
 
     .fowleyIntroParagraph {
