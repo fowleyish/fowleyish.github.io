@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="alex fowle, alexander fowle, ux portfolio, ux designer, ux portfolio examples, ux design portfolio, hci portfolio, human computer interaction design">
+    <meta name="description" content="A UX design/research and HCI portoflio | Alex Fowle Portfolio">
+    <link rel="icon" href="./images/glasses-icons/glasses-guy-green.svg" type="image/svg+xml">
+    <link href="./styles/styles.css" type="text/css" rel="stylesheet">
+    <!--Inter font-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!--Space Grotesk font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--Font Awesome for icons-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <!--Feature script-->
+    <script src="./scripts/features.js"></script>
+    <title>Portfowleyo - Licensing Usability Study</title>
+</head>
+
+<body>
+    <div id="zoom-modal">
+        <img id="zoomed-image" alt="">
+    </div>
+
+    <header class="mobile-toc-header">
+        <button class="mobile-toc-toggle" aria-label="Open table of contents">
+            <div class="hamburger">
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
+            </div>
+        </button>
+        <div class="mobile-toc-current" aria-live="polite"></div>
+    </header>
+    <div class="mobile-toc-overlay" hidden></div>
+    <aside class="mobile-toc-drawer" aria-hidden="true">
+        <div class="mobile-toc-drawer__inner-accent-card">
+            <div class="mobile-toc-drawer__inner">
+                <div class="header">
+                    <h4>On this page</h4>
+                    <button class="mobile-toc-close" aria-label="Close table of contents">
+                        <svg
+                            class="icon-close"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <line x1="5" y1="5" x2="19" y2="19" />
+                            <line x1="5" y1="19" x2="19" y2="5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile-drawer-toc-container">
+                    <ul class="mobile-toc-links">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#goals">Goals and success criteria</a></li>
+                        <li><a href="#approach">Approach</a></li>
+                        <li><a href="#findings">Key findings</a></li>
+                        <li><a href="#designs">Design decisions</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                    </ul>
+                    <div class="mobile-toc-divider"></div>
+                    <div class="mobile-toc-links">
+                        <li>
+                            <a href="./index">
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="page">
+        <div class="margin-box left">
+            <div class="toc-card">
+                <h4>On this page</h4>
+                <ul class="contents">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#goals">Goals and success criteria</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#findings">Key findings</a></li>
+                    <li><a href="#designs">Design decisions</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="home">
+                    <a href="./index">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-box case-study">
+            <section>
+                <div class="page-header">
+                    <h1 class="page-title">Licensing product usability study</h1>
+                    <div class="type-and-ttr">
+                        <div class="type">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            Research
+                        </div>
+                        <div>|</div>
+                        <div class="time-to-read">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <div>9 minute read</div>
+                        </div>
+                    </div>
+                    <div class="page-image" id="case-study-hero">
+                        <img src="./images/licensing/hero.png" alt="#">
+                    </div>
+                    <div class="collapsible-container">
+                        <div class="summary-content" id="dropdown-content" style="max-height: 0px;">
+                            <div class="summary-inner">
+                                <dl class="details-grid">
+                                <dt>
+                                    Role
+                                </dt>
+                                <dd>
+                                    UX Researcher
+                                </dd>
+                                <dt>
+                                    Timeline
+                                </dt>
+                                <dd>
+                                    October - December 2025
+                                </dd>
+                                <dt>
+                                    Team
+                                </dt>
+                                <dd>
+                                    Solo researcher, collaborating with a product owner + UI designer
+                                </dd>
+                                <dt>
+                                    Scope
+                                </dt>
+                                <dd>
+                                    Planned and executed evaluative research to assess how Licensing Specialists interact with a redesigned correction order workflow
+                                </dd>
+                                <dt>
+                                    Methods
+                                </dt>
+                                <dd>
+                                    Moderated usability sessions, task-based evaluation, mixed-methods analysis
+                                </dd>
+                                <dt>
+                                    Deliverables
+                                </dt>
+                                <dd>
+                                    Key insights, thematic findings, actionable design recommendations
+                                </dd>
+                                <dt>
+                                    Outcome
+                                </dt>
+                                <dd>
+                                    Surfaced usability issues and guided the team toward a more intuitive, field-aligned correction order workflow
+                                </dd>
+                            </dl>
+                            </div>
+                        </div>
+                        <div class="link-divider">
+                            <a id="toggle-dropdown" class="read-more shadow" role="button" onclick="toggleDropdown()">
+                                <span class="collapsible-label">View Summary</span>
+                                <i class="fa-solid fa-chevron-down icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button id="back-to-top" class="shadow" aria-label="Back to top">
+                    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                </button>
+            </section>
+
+            <section id="introduction">
+                <p>
+                    I was approached by a product owner to conduct user research on an early design for a new
+                    product — Licensing — used by childcare providers and administrative staff to issue, maintain, and
+                    manage the licenses required for a facility to legally operate. A core workflow in this system is
+                    creating and managing <span class="bold">correction orders</span>, which <span
+                        class="bold">Licensing Specialists</span> use to document health and safety violations uncovered
+                    during onsite inspections, ranging from sanitation issues to staffing concerns.
+                </p>
+                <p>
+                    Correction orders are central to Specialists' work, yet the client's current system makes issuing
+                    and managing them frustrating, inconsistent, and error-prone. Because this workflow is both
+                    high-stakes and historically painful, the redesigned experience needed to better support
+                    Specialists' real needs while reducing the friction they face today.
+                </p>
+            </section>
+
+            <section id="goals">
+                <h2>
+                    Goals and success criteria
+                </h2>
+                <p>
+                    The team's primary goal was to determine whether the redesigned correction order workflow
+                    effectively supported the needs and mental models of Specialists. As I learned more about the
+                    limitations of the legacy system, I also became increasingly interested in whether a more intuitive
+                    experience could influence how Specialists approached creating and managing correction orders in
+                    their day-to-day work.
+                </p>
+                <p>
+                    To determine whether the designs were meeting those goals, I evaluated:
+                </p>
+                <ul class="styled">
+                    <li><span class="bold">Clarity of workflow</span>: Specialists can easily see where to begin, how to
+                        move through the process, and how to complete core tasks.</li>
+                    <li><span class="bold">Reduced friction</span>: The redesigned workflow removes the pain points that
+                        previously made issuing correction orders feel burdensome or impractical.</li>
+                    <li><span class="bold">Alignment with mental models</span>: The structure and terminology match how
+                        Specialists think about violations, documentation, and follow-up, minimizing disconnects between
+                        process and technology.</li>
+                    <li><span class="bold">Signals of potential behavior change</span>: Specialists indicate that the
+                        updated experience could make correction order tasks feel more manageable and approachable.</li>
+                </ul>
+            </section>
+
+            <section id="approach">
+                <h2>
+                    Approach
+                </h2>
+                <p>
+                    After establishing the study's goals and success criteria, I created a research plan to align the
+                    team on scope, methods, and expectations. With that foundation in place, I moved into selecting the
+                    appropriate methods for evaluating the redesigned workflow.
+                </p>
+                <h3>
+                    Methods
+                </h3>
+                <p>
+                    To choose the right data collection methods, I considered the goals of the initiative, the stage of
+                    the designs, and the access I had to Licensing Specialists. Because the team needed to validate
+                    whether the proposed workflow supported real inspection practices, an evaluative approach made the
+                    most sense. I opted for moderated, synchronous sessions so I could observe Specialists' reactions in
+                    real time and probe when something didn't align with their expectations.
+                </p>
+                <p>
+                    Given the population of 20 Specialists and the scope of the study, a small, focused sample was
+                    appropriate. I structured the sessions as a <span class="bold">mixed-methods usability study</span>
+                    that combined task-based evaluation with qualitative interview questions to capture both behavioral
+                    and attitudinal insights.
+                </p>
+                <h3>
+                    Participants and recruitment
+                </h3>
+                <p>
+                    Before finalizing my recruitment criteria, I initially planned to recruit Specialists who had some
+                    early exposure to the new designs. A few unconventional UI patterns in the designs could have been
+                    difficult to navigate without context, so this felt like a reasonable starting point. However, once
+                    I learned that only three Specialists had seen the designs, it became clear that recruiting solely
+                    from that group would have produced an unrepresentative sample.
+                </p>
+                <p>
+                    In response, I shifted to recruiting Specialists with no prior exposure to the redesign. This
+                    ensured the findings reflected the broader population and allowed me to observe how first time users
+                    interpreted the workflow.
+                </p>
+                <div class="emphasis-block">
+                    <p>
+                        To ensure I captured meaningful data, <span class="bold">I adapted my facilitation
+                            strategy</span>, providing more explicit task instructions and guiding participants past
+                        task failures when needed, <span class="bold">prioritizing insight over strict adherence to
+                            usability testing convention</span>.
+                    </p>
+                </div>
+                <p>
+                    With that adjustment in place, I used a brief pre-screener to confirm that participants met the
+                    following criteria:
+                </p>
+                <ul class="styled">
+                    <li>
+                        At least one year of experience as a Licensing Specialist, ensuring they had meaningful exposure
+                        to issuing and managing correction orders
+                    </li>
+                    <li>
+                        No recent experience working at a licensed Provider and no experience as a Licensing Supervisor,
+                        which avoids cross-role bias
+                    </li>
+                    <li>
+                        No prior exposure to the redesigned workflow, ensuring the sample reflected the broader
+                        Specialist population
+                    </li>
+                </ul>
+                <p>
+                    These criteria guaranteed that the participants represented the real world users of the workflow and
+                    could provide grounded, experience based feedback on the redesigned flow.
+                </p>
+                <h3>
+                    Data collection
+                </h3>
+                <p>
+                    I conducted five one-hour usability sessions over Microsoft Teams using a Figma prototype. Each
+                    session followed a consistent structure designed to build rapport, observe behaviors, and probe into
+                    participants' expectations and reactions in real time:
+                </p>
+                <ol class="styled">
+                    <li>
+                        <span class="bold">Warm-up and context setting (15 minutes)</span>: I opened each session with
+                        brief introductions and role-oriented questions to help participants feel comfortable and to
+                        understand their responsibilities, attitudes toward correction orders, and how they currently
+                        manage them.
+                    </li>
+                    <li>
+                        <span class="bold">Usability tasks (30 minutes)</span>: Participants completed five tasks that
+                        represented the core steps of the correction order workflow. I opted for a low-fidelity
+                        prototype to focus the study on information architecture, navigation, and flow; I asked
+                        participants to think aloud so I could explore moments of confusion as they arose; and I
+                        followed each task with a short set of scripted questions to capture perceptions of clarity,
+                        difficulty, and alignment with real-world processes.
+                    </li>
+                    <li>
+                        <span class="bold">Closing reflections (15 minutes)</span>: I asked participants to reflect on
+                        the workflow as a whole — what worked, what didn't, and what they expected to see that wasn't
+                        present.
+                    </li>
+                </ol>
+                <p>
+                    After completing all sessions, I invited participants to complete an optional, anonymous
+                    satisfaction survey, which helps me refine my moderation style and improve future participant
+                    experiences.
+                </p>
+                <h3>
+                    Analysis
+                </h3>
+                <p>
+                    Moving into analysis, my first step was to bring structure to the raw data I had amassed. After
+                    transcribing each session recording, I extracted comments, quotes, nonverbal reactions, and
+                    observations relevant to my research questions. With this textualized dataset, I selected the
+                    following complementary analysis methods to understand both what participants did and how they felt
+                    doing it:
+                </p>
+                <ul class="styled">
+                    <li>
+                        <span class="bold">Task performance analysis</span> to evaluate how participants navigated each
+                        task, which tasks were easiest, and where they encountered friction
+                    </li>
+                    <li>
+                        <span class="bold">Sentiment analysis</span> to identify trends in their emotional response to
+                        key features within the workflow
+                    </li>
+                    <li>
+                        <span class="bold">Affinity diagramming</span> to synthesize patterns across behaviors,
+                        expectations, and feedback
+                    </li>
+                </ul>
+                <p>
+                    Together, these methods revealed which parts of the workflow were intuitive, which consistently
+                    caused confusion or frustration, and where participants' expectations of system behavior weren't
+                    met.
+                </p>
+            </section>
+
+            <section id="findings">
+                <h2>
+                    Key findings
+                </h2>
+                <p>
+                    Before creating design recommendations, I synthesized the study's results into four key findings
+                    that highlight where the prototype supported Specialists' needs and where critical gaps remained.
+                </p>
+                <h3 class="full-width-li">
+                    1. Specialists experience significant friction and mistrust in their legacy system
+                </h3>
+                <p>
+                    Although evaluating the legacy system wasn't a formal goal of the study, participants referenced it
+                    frequently when interacting with the new designs. They described their current correction order
+                    workflow as slow, cumbersome, and unreliable, with failures in notifications and status tracking
+                    that forced them to maintain parallel spreadsheets and manually verify information. This lack of
+                    trust made the process feel daunting and often led to incomplete correction orders or skipping
+                    documenting the violation altogether — reinforcing the hypothesis that a more usable, reliable system
+                    could meaningfully change their behavior.
+                </p>
+                <h3 class="full-width-li">
+                    2. Automation and clearer workflows in the new design reduce effort and support more consistent use
+                </h3>
+                <p>
+                    Participants responded positively to the automated features in the redesign, noting that the system
+                    handled much of the repetitive data entry that previously consumed their time. Even when certain
+                    workflows felt unfamiliar at first, they quickly navigated them more confidently in subsequent
+                    tasks, suggesting that the system's visual hierarchy and patterns supported learnability. These
+                    improvements indicated that a faster, more intuitive experience could <span class="bold">encourage
+                        Specialists to issue correction orders more regularly</span>.
+                </p>
+                <h3 class="full-width-li">
+                    3. The system's information architecture caused confusion and frequent navigation errors
+                </h3>
+                <p>
+                    Despite the improvements above, participants struggled with how some features were
+                    organized — particularly when two navigation bars appeared at once for different contexts. This
+                    dual-navigation pattern led to repeated missteps and task failures, signaling that the system's
+                    structure did not align with Specialists' mental models of how their work should flow.
+                </p>
+                <h3 class="full-width-li">
+                    4. Specialists expect integrated tools for Provider communication and support
+                </h3>
+                <p>
+                    Across sessions, Specialists expressed a clear expectation that the system should support ongoing
+                    interactions with Providers throughout a correction order's lifespan — a capability absent from the
+                    prototype. They looked for features that would streamline communication, reduce reliance on external
+                    communication channels, and provide visibility into what Providers see in the system. Many noted
+                    that the legacy system obscures critical information, making it difficult for Providers to
+                    understand what they need to do and when. These gaps underscored the need for the platform to
+                    function as a shared, transparent workspace between Specialists and Providers.
+                </p>
+                <div class="spacer">
+                    <div></div>
+                </div>
+                <p>
+                    These findings clarified where the prototype aligned with Specialists' needs and where structural,
+                    workflow, and communication gaps remained. The following design recommendations focus on addressing
+                    the most critical barriers to task success and supporting end to end collaboration between
+                    Specialists and Providers.
+                </p>
+            </section>
+
+            <section id="designs">
+                <h2>
+                    Design decisions
+                </h2>
+                <p>
+                    Grounded in the insights from this study, I designed <span class="bold">15 recommendations</span>
+                    aimed at reducing friction, strengthening Specialists' mental models, and improving the overall
+                    usability of the system. I prioritized these using an <span class="bold">Impact/Difficulty
+                        matrix</span>, prioritizing changes that would meaningfully improve Specialists' ability to
+                    navigate the system, understand context, and complete core tasks. While some recommendations
+                    addressed efficiency or “nice-to-have” enhancements, the highest-impact items centered on
+                    information architecture issues that were actively undermining task success.
+                </p>
+                <h3>
+                    Deep dive: Fixing the double-navigation issue
+                </h3>
+                <p>
+                    When Specialists navigated into a Provider's dashboard, a second navigation bar appeared at the top
+                    of the screen. This top nav contained links relevant only to the current Provider, while the
+                    persistent left nav contained administrative tools.
+                </p>
+                <div class="image-full">
+                    <img src="./images/licensing/before.png"
+                        alt="A simple wireframe showing the old double-navigation pattern." class="can-zoom">
+                    <div class="image-subtitle">The Specialist navigation is on the left in purple. The Provider
+                        navigation is across the top in pink.</div>
+                </div>
+                <p>
+                    The sudden appearance of a second navigation — each containing overlapping or similarly named
+                    items — created confusion and a <span class="bold">disproportionate surge in task failures</span>.
+                    Specialists weren't always sure which menu controlled which part of the system, and the competing
+                    navigation structures made it harder to understand where they were in the workflow.
+                </p>
+                <h4>
+                    Recommendation
+                </h4>
+                <p>
+                    I recommended collapsing the Specialist navigation whenever a user enters the Provider's context.
+                    This approach:
+                </p>
+                <ul class="styled">
+                    <li>
+                        Minimizes visual and attentional competition between the two navigation systems
+                    </li>
+                    <li>
+                        Signals a clear shift in context (“I am now inside this Provider's space”)
+                    </li>
+                    <li>
+                        Prevents duplicate or overlapping menu items from competing for attention
+                    </li>
+                    <li>
+                        Preserves access to administrative tools without making them visually dominant
+                    </li>
+                </ul>
+                <p>
+                    To support recognition when collapsed, I added icons to each Specialist navigation item. Over time,
+                    Specialists may build familiarity with these icons, making it easier to navigate even when the menu
+                    is minimized. Hovering over the Specialist navigation expands it to include labels as an overlay of
+                    the Provider's context, signaling that clicking here removes them from the Provider's context
+                    without relying solely on iconography.
+                </p>
+                <div class="image-full">
+                    <video src="./images/licensing/after-video.mp4" controls muted playsinline class="case-video">
+                    </video>
+                </div>
+                <p>
+                    This solution <span class="bold">reduces cognitive load</span> while reinforcing the contextual cues
+                    Specialists rely on to understand where they are in the system — two issues that surfaced repeatedly
+                    in the study.
+                </p>
+                <h4>
+                    Expected impact
+                </h4>
+                <ul class="styled">
+                    <li>
+                        Fewer navigation errors
+                    </li>
+                    <li>
+                        Reduced frustration, especially for first-time users
+                    </li>
+                    <li>
+                        A clearer sense of “where I am” in the system
+                    </li>
+                    <li>
+                        A stronger first impression for new users, bolstering adoption
+                    </li>
+                    <li>
+                        Better alignment between system behavior and user expectations
+                    </li>
+                </ul>
+                <p>
+                    While business constraints prevented further validation with participants, the logic behind this
+                    solution resonated strongly with stakeholders who work closely with Specialists.
+                </p>
+                <h3>
+                    Additional high-impact recommendations
+                </h3>
+                <p>
+                    I'll briefly highlight two additional recommendations that had meaningful impact:
+                </p>
+                <h4>
+                    Supporting communication between Specialists and Providers
+                </h4>
+                <p>
+                    Specialists expected certain communication features that were missing from the prototype. I
+                    recommended adding lightweight but meaningful features to streamline interactions with Providers
+                    while reducing reliance on external channels. These additions aim to help Specialists manage the
+                    full correction order process while maintaining a centralized, system-based record of communication.
+                </p>
+                <h4>
+                    Adding system feedback to build trust
+                </h4>
+                <p>
+                    Specialists often weren't sure whether the system had completed an action — for example, whether
+                    creating a correction order automatically notified the Provider. I recommended adding explicit
+                    feedback mechanisms (such as confirmation modals) to reassure Specialists that the system was
+                    behaving as expected. This matters because <span class="bold">feedback fosters trust</span>, and
+                    trust is essential for reducing off-system workarounds they're accustomed to with the legacy system.
+                </p>
+                <h3>
+                    Implementation
+                </h3>
+                <p>
+                    Once the recommendations were validated, I worked closely with the product designer through a series
+                    of collaborative design sessions in Figma. He brought deep knowledge of system constraints; I
+                    brought the research and rationale. Together, we shaped solutions that maximized impact without
+                    over-investing in polish — very much in line with my philosophy of <span class="bold">prioritizing
+                        clarity, usability, and ease of use over aesthetics</span> .
+                </p>
+            </section>
+
+            <section id="impact">
+                <h2>
+                    Impact
+                </h2>
+                <p>
+                    The most immediate impact of this work was the implementation of several high-value
+                    recommendations — most notably the improvements to navigation and system feedback — which bolstered the
+                    correction order workflow's usability before it ever reached development. But the deeper impact came
+                    from how the research reshaped the team's understanding of Specialists themselves. Many stakeholders
+                    were surprised by how strongly Specialists avoided working with correction orders due to the
+                    limitations of their legacy system, and this new clarity sparked broader conversations about
+                    communication, notifications, and the back-and-forth nature of the workflow. The study also led to
+                    the creation of a functional <span class="bold">user archetype</span> (a role-based alternative to a
+                    persona that emphasizes shared responsibilities over demographics), giving the team a grounded
+                    reference point for future design decisions and helping reduce reliance on assumptions or
+                    stereotypes.
+                </p>
+                <p>
+                    On a personal level, this project strengthened my ability to navigate ambiguity with confidence. I
+                    entered unfamiliar territory — new users, new workflows, and a product still taking shape — and emerged
+                    with a deep, evidence-based understanding of a complex domain. The experience reinforced my belief
+                    that even in challenging environments, a disciplined UX process can cut through uncertainty and
+                    create clarity, alignment, and meaningful change.
+                </p>
+            </section>
+
+            <div class="glasses-guy-icon-container">
+                <img src="./images/glasses-icons/glasses-guy-green.svg">
+            </div>
+
+            <div class="home-button-bottom-mobile">
+                <a href="./index">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    Home
+                </a>
+            </div>
+        </div>
+        <div class="margin-box">
+
+        </div>
+</body>
+<script src="./scripts/zoom.js"></script>
+
+</html>

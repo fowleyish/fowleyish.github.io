@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="alex fowle, alexander fowle, ux portfolio, ux designer, ux portfolio examples, ux design portfolio, hci portfolio, human computer interaction design">
+    <meta name="description" content="A UX design/research and HCI portoflio | Alex Fowle Portfolio">
+    <link rel="icon" href="./images/glasses-icons/glasses-guy-green.svg" type="image/svg+xml">
+    <link href="./styles/styles.css" type="text/css" rel="stylesheet">
+    <!--Inter font-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!--Space Grotesk font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--Font Awesome for icons-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <!--Feature script-->
+    <script src="./scripts/features.js"></script>
+    <title>Portfowleyo - AI DJ Experience Study</title>
+</head>
+
+<body>
+    <header class="mobile-toc-header">
+        <button class="mobile-toc-toggle" aria-label="Open table of contents">
+            <div class="hamburger">
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
+            </div>
+        </button>
+        <div class="mobile-toc-current" aria-live="polite"></div>
+    </header>
+    <div class="mobile-toc-overlay" hidden></div>
+    <aside class="mobile-toc-drawer" aria-hidden="true">
+        <div class="mobile-toc-drawer__inner-accent-card">
+            <div class="mobile-toc-drawer__inner">
+                <div class="header">
+                    <h4>On this page</h4>
+                    <button class="mobile-toc-close" aria-label="Close table of contents">
+                        <svg
+                            class="icon-close"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <line x1="5" y1="5" x2="19" y2="19" />
+                            <line x1="5" y1="19" x2="19" y2="5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile-drawer-toc-container">
+                    <ul class="mobile-toc-links">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#goals">Goals and success criteria</a></li>
+                        <li><a href="#approach">Approach</a></li>
+                        <li><a href="#findings">Key findings</a></li>
+                        <li><a href="#designs">Design recommendations</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#reflection">Reflection</a></li>
+                    </ul>
+                    <div class="mobile-toc-divider"></div>
+                    <div class="mobile-toc-links">
+                        <li>
+                            <a href="./index">
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="page">
+        <div class="margin-box left">
+            <div class="toc-card">
+                <h4>On this page</h4>
+                <ul class="contents">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#goals">Goals and success criteria</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#findings">Key findings</a></li>
+                    <li><a href="#designs">Design recommendations</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="home">
+                    <a href="./index">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-box case-study">
+            <section>
+                <div class="page-header">
+                    <h1 class="page-title">AI DJ Experience Study</h1>
+                    <div class="type-and-ttr">
+                        <div class="type">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            Research
+                        </div>
+                        <div>|</div>
+                        <div class="time-to-read">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <div>9 minute read</div>
+                        </div>
+                    </div>
+                    <div class="page-image" id="case-study-hero">
+                        <img src="./images/DJ/djBannerImage.png" alt="An AI DJ promotional image from Spotify">
+                        <div class="image-subtitle">Source: Spotify</div>
+                    </div>
+                    <div class="collapsible-container">
+                        <div class="summary-content" id="dropdown-content" style="max-height: 0px;">
+                            <div class="summary-inner">
+                                <dl class="details-grid">
+                                <dt>
+                                    Role
+                                </dt>
+                                <dd>
+                                    UX Researcher
+                                </dd>
+                                <dt>
+                                    Timeline
+                                </dt>
+                                <dd>
+                                    February - May 2024
+                                </dd>
+                                <dt>
+                                    Team
+                                </dt>
+                                <dd>
+                                    Solo
+                                </dd>
+                                <dt>
+                                    Scope
+                                </dt>
+                                <dd>
+                                    Designed and conducted a qualitative study to explore user perceptions, behaviors, and expectations around Spotify's AI DJ
+                                </dd>
+                                <dt>
+                                    Methods
+                                </dt>
+                                <dd>
+                                    Semi-structured qualitative interviews, bottom-up thematic analysis
+                                </dd>
+                                <dt>
+                                    Deliverables
+                                </dt>
+                                <dd>
+                                    Key insights, AI service design recommendations
+                                </dd>
+                                <dt>
+                                    Outcome
+                                </dt>
+                                <dd>
+                                    Generated evidence-based insights into how DJ shapes user behavior and expectations, informing future research and design decisions for AI-driven recommendation systems
+                                </dd>
+                            </dl>
+                            </div>
+                        </div>
+                        <div class="link-divider">
+                            <a id="toggle-dropdown" class="read-more shadow" role="button" onclick="toggleDropdown()">
+                                <span class="collapsible-label">View Summary</span>
+                                <i class="fa-solid fa-chevron-down icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button id="back-to-top" class="shadow" aria-label="Back to top">
+                    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                </button>
+            </section>
+
+            <section id="introduction">
+                <p>
+                    In early 2023, Spotify released AI DJ, an AI service that blends generative AI with the platform's long-standing recommender system. Unlike passive playlists such as Discover Weekly, DJ introduces a new interaction model: a named, voiced persona ("DJ X") that curates and presents music in real time. This is one of the first consumer-facing features to explicitly merge GenAI with algorithmic recommendations, giving users not just personalized content, but a literal voice representing the algorithm behind it.
+                </p>
+                <p>
+                    As part of a graduate-level qualitative UX research course at Iowa State University, I chose to study how Spotify users perceive this new experience. While there is extensive research on generative AI and recommender systems individually, little is known about how people respond when these technologies are combined and personified. With companies rapidly adopting GenAI across countless use cases, DJ raises an important question: <span class="bold">How do users make sense of an algorithm when it suddenly talks back?</span>
+                </p>
+                <h3>How DJ Works</h3>
+                <p>
+                    After launching DJ, users receive a sequence of short “mixes” — sets of five to six songs grouped around themes such as recent listening habits, past listening eras (e.g., “your 2018 favorites”), artists they already enjoy, or general moods or "vibes". Each mix is introduced and closed by <span class="bold">DJ X</span>, who provides brief commentary ranging from simple theme descriptions to deeper context about the artists or tracks in the mix.
+                </p>
+                <div class="image-max-width">
+                    <video src="./images/DJ/usingDJ.mp4" controls muted playsinline class="case-video">
+                    </video>
+                    <div class="image-subtitle">Opening DJ and rerolling a mix on a mobile device</div>
+                </div>
+                <p>
+                    Users have limited control in a DJ session — they can skip individual songs or press the Remix button to generate a new mix, but they cannot influence the themes or content selections. These are determined entirely by Spotify's underlying recommender system, which aims to keep users engaged by predicting what they might want to hear next — a pattern common across platforms like TikTok, where algorithmic curation drives continuous engagement.
+                </p>
+                <p>
+                    What stood out to me was how different DJ feels from Spotify's other personalized features. Discover Weekly and similar playlists rely on similar recommendation logic, but DJ is the first to give that logic a persona, a voice, and a conversational presence. I became curious how everyday users — many with limited knowledge on how these sorts of algorithms fundamentally work — interpreted this shift. Did DJ make the algorithm feel more visible? Did it change how people thought about personalization, control, or Spotify itself?
+                </p>
+            </section>
+
+            <section id="goals">
+                <h2>
+                    Goals and success criteria
+                </h2>
+                <p>
+                    This study aimed to understand how Spotify users make sense of AI DJ — a feature that blends generative AI with algorithmic music recommendations and introduces a voiced persona into the listening experience. I was particularly interested in how users interpret and trust AI-driven features in everyday contexts.
+                </p>
+                <p>
+                    I focused on three guiding research questions:
+                </p>
+                <ol class="styled">
+                    <li>How do Spotify users think about AI DJ, and does using DJ influence their broader listening habits?</li>
+                    <li>When do users choose to engage with DJ, and when do they prefer other Spotify features?</li>
+                    <li>How do users interpret the generative AI voice that introduces and guides each DJ session?</li>
+                </ol>
+                <p>
+                    Success for this project meant identifying early patterns in how people understand, use, and emotionally respond to DJ — not to produce definitive conclusions, but to surface themes that could inform future research or design directions.
+                </p>
+            </section>
+
+            <section id="approach">
+                <h2>
+                    Approach
+                </h2>
+                <p>
+                    To meet the requirements of the course this project was completed for, this study used semi-structured qualitative interviews as the primary data collection method. My approach centered on designing a process that aligned with those requirements while still answering my research questions meaningfully.
+                </p>
+                <h3>
+                    Methods
+                </h3>
+                <p>
+                    Despite being a requirement, <span class="bold">semi-structured qualitative interviews</span> were also the <i>correct</i> method for this study because my research questions focused on people's perceptions, decision-making, and lived experiences with AI DJ. These questions required depth, nuance, and the flexibility to probe into unexpected directions — all strengths of SSQIs. This format allowed participants to describe how and why they use DJ in their own words, while still giving me enough structure to compare patterns across interviews. Because the feature is personal, contextual, and emotionally driven, a qualitative approach was the most effective way to surface the attitudes and behaviors that wouldn't emerge through surveys or behavioral data alone.
+                </p>
+                <h3>
+                    Participants and recruitment
+                </h3>
+                <p>
+                    I recruited seven participants using convenience sampling from my personal, academic, and professional networks. Because this was an unfunded student project, convenience sampling was the most practical way to reach qualified Spotify users without the ability to offer monetary incentives. I initially targeted a sample of five to eight participants, anticipating that this range would bring me to a "point of diminishing returns" where additional interviews contribute fewer new insights. 
+                </p>
+                <p>
+                    Participants needed to meet three criteria to ensure they had sufficient experience with both Spotify and DJ:
+                </p>
+                <ul class="styled">
+                    <li>
+                        <span class="bold">Two or more years of Spotify use</span> so they were familiar with the platform and had enough listening history for DJ to provide meaningful recommendations
+                    </li>
+                    <li>
+                        <span class="bold">Had experienced at least four DJ sessions</span> to ensure they already had formed opinions of the feature
+                    </li>
+                    <li>
+                        <span class="bold">Had at least one DJ session in the last month</span> so their impressions were recent enough to easily recall and grounded in current behavior
+                    </li>
+                </ul>
+                <h3>
+                    Data collection
+                </h3>
+                <p>
+                    I conducted the interviews either virtually or in person depending on what was most convenient for each participant. Sessions lasted 30-60 minutes and followed a semi-structured script that allowed some flexibility in exploring unanticipated topics. Before beginning, I obtained verbal consent to record each session for analysis. The data collection process was <span class="bold">intentionally straightforward</span>, following established qualitative research practices to capture rich, comparable narratives across participants.
+                </p>
+                <h3>
+                    Analysis
+                </h3>
+                <p>
+                    Because thematic analysis was a required component of the course, I used it as the sole method for synthesizing the interview data. In a different context, I could have paired this approach with a short diary study to capture participants' real-world DJ usage over time, but within the scope of this project, thematic analysis was the most appropriate way to identify patterns across interviews.
+                </p>
+                <p>
+                    I transcribed each interview and conducted a bottom-up thematic analysis using Taguette, an open source qualitative coding tool. While speaking with only seven participants limits the generalizability of the findings, the dataset showed promising early saturation:
+                </p>
+                <ul class="styled">
+                    <li>
+                        39 of 47 codes (~83%) appeared after coding just two transcripts
+                    </li>
+                    <li>
+                        43 of 47 codes (~91%) appeared in at least two transcripts
+                    </li>
+                </ul>
+                <p>
+                    These patterns suggest <span class="bold">code saturation</span>, even if full meaning saturation was not reached.
+                </p>
+                <h4>
+                    A quick note on bias
+                </h4>
+                <p>
+                    To reduce interpretive bias as the sole researcher, I incorporated perspective-shifting and relfexivity into my analysis. When grouping codes into themes, I iterated through my codes from different participant viewpoints and intentionally adapted a curious, more playful mindset to match the tone of the application rather than the more critical stance I often bring to AI-mediated systems.
+                </p>
+            </section>
+
+            <section id="findings">
+                <h2>
+                    Key findings
+                </h2>
+                <p>
+                    Through this process, several key themes emerged.
+                </p>
+                <h3 class="full-width-li">
+                    1. Participants trusted DJ's recommendations but questioned its understanding of them
+                </h3>
+                <p>
+                    Across interviews, participants described a tension: DJ reliably surfaced music they enjoyed, yet many felt the feature didn't fully “get” them as individuals. Some felt mischaracterized by the themes or eras DJ assigned to them; others became more aware of how their listening behavior might be interpreted by the algorithm.
+                </p>
+                <div class="blockquote">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <div class="quote">
+                        I think it's funny. He's like, "this is your Wednesday 4pm vibe." And I didn't realize I had a "vibe." 
+                        <div>P1</div>
+                    </div>
+                </div>
+                <p>
+                    For several participants, DJ prompted their first real reflection on how Spotify constructs a profile of their habits — suggesting that the “black box” of algorithmic personalization becomes more salient when it's given a voice and persona.
+                </p>
+                <h3 class="full-width-li">
+                    2. DJ is a go-to option when users don't want to decide
+                </h3>
+                <p>
+                    Participants consistently described DJ as a low-effort listening mode. When driving, cleaning, or doing other routine tasks, they appreciated not having to choose what to play. DJ offered a way to avoid decision fatigue in a platform with overwhelming choice.
+                </p>
+                <p>
+                    As <span class="emphasis-text">[P2]</span> put it, many simply wanted DJ to “play music at them” without requiring active engagement.
+                </p>
+                <h3 class="full-width-li">
+                    3. DJ changed how users explore and manage their listening habits
+                </h3>
+                <p>
+                    This was the most unexpected pattern. Several participants said DJ made them more conscious of how their actions might influence future recommendations. Some avoided clicking on unfamiliar artists or genres for fear of "sending the wrong signal" to the algorithm.
+                </p>
+                <div class="blockquote">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <div class="quote">
+                        I was thinking the other day of how quickly it picks up on something new that you listen to…sometimes when I'm searching and playing stuff I have a thought: <span class="quote-emphasis">"Is this going to screw up my DJ?"</span>
+                        <div class="emphasis-text">P5</div>
+                    </div>
+                </div>
+                <p>
+                    A few even explored new music on other platforms, like YouTube, to avoid affecting their Spotify profile. This raises a broader design question: How can recommender systems balance personalization with users' desire for untracked exploration?
+                </p>
+                <h3 class="full-width-li">
+                    4. The value of DJ X's voice was polarizing
+                </h3>
+                <p>
+                    Participants were split on whether the generative AI voice added value. Some appreciated DJ X as a friendly presence, especially during long drives. Others found the interruptions distracting and preferred uninterrupted music. The persona was meaningful for some; intrusive for others.
+                </p>
+                <h3 class="full-width-li">
+                    5. Users want more control over DJ's behavior and output
+                </h3>
+                <p>
+                    Nearly all participants expressed a desire for more agency — both over the voice and the music itself. Requests included:
+                </p>
+                <ul class="styled">
+                    <li>
+                        Customizing DJ X's voice (e.g., accent, tone, gender)
+                    </li>
+                    <li>
+                        Setting a vibe or starting point through a prompt or seed artist
+                    </li>
+                    <li>
+                        Extending mixes they enjoyed
+                    </li>
+                    <li>
+                        More explicit ways to signal dislikes or blacklist artists or artists
+                    </li>
+                </ul>
+                <div class="blockquote">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <div class="quote">
+                        Something with Spotify I've noticed is it doesn't necessarily take into account music that you don't like…say you don't like a certain artist, I've struggled getting rid of those [in mixes].
+                        <div class="emphasis-text">P6</div>
+                    </div>
+                </div>
+                <p>
+                    These desires point to a gap between DJ's simplicity and users' expectations for personalization tools that feel responsive and adjustable.
+                </p>
+            </section>
+
+            <section id="designs">
+                <h2>
+                    Design recommendations
+                </h2>
+                <p>
+                    This preliminary study surfaced several opportunities for Spotify to strengthen the DJ experience and better support how users want to engage with AI-driven music recommendations.
+                </p>
+                <h3 class="full-width-li">
+                    1. Increase transparency around how listening data shapes recommendations
+                </h3>
+                <p>
+                    DJ made Spotify's underlying recommendation logic more visible to users, sometimes for the first time. Several participants were unsure how their actions influenced future mixes. Providing plain language explanations of when data is collected and how listening profiles are constructed could help users feel more informed and less mischaracterized by the algorithm.
+                </p>
+                <h3 class="full-width-li">
+                    2. Offer optional controls that give users more agency
+                </h3>
+                <p>
+                    Participants expressed a clear desire for lightweight ways to shape DJ's behavior — from customizing DJ X's voice to influencing the vibe or starting point of a mix. These controls should remain optional so DJ can still function as a low-effort listening mode, but introducing adjustable settings could address many of the frustrations users described.
+                </p>
+                <h3 class="full-width-li">
+                    3. Create clearer pathways for untracked or low-stakes exploration
+                </h3>
+                <p>
+                    Some participants avoided exploring new music on Spotify because they worried it would "mess up" their DJ. This recommendation also provides business value: a dedicated space for exploration — or clearer guidance on how to browse without affecting recommendations — could reduce this anxiety and keep users from turning to competing platforms for discovery.
+                </p>
+                <h3 class="full-width-li">
+                    4. Reevaluate the role and presence of DJ X
+                </h3>
+                <p>
+                    Reactions to DJ X were mixed: some found the voice companionable, while others found it disruptive. This suggests an opportunity to experiment with different levels of presence, tone, or frequency of interjections. Understanding when DJ X enhances the experience — and when it gets in the way — could help Spotify calibrate the persona more effectively.
+                </p>
+            </section>
+
+            <section id="impact">
+                <h2>
+                    Impact
+                </h2>
+                <p>
+                    Although this was an academic project, the study surfaced early signals about how people interpret and navigate AI-mediated listening experiences. Taken together, the findings point to a broader design challenge: users want the <span class="bold">ease</span> of a fully-automated mode like DJ, but they also want <span class="bold">algorithmic transparency</span> (even in a low-stakes application like DJ), the option for more <span class="bold">control</span> over the algorithm, and the <span class="bold">freedom to explore</span> without unintended consequences. These tensions highlight opportunities for teams working on AI-driven recommendation features to rethink how transparency, agency, and persona design shape the listening experience. While preliminary, the insights offer a foundation for future research and experimentation into how AI companions can support — not constrain — everyday music discovery.
+                </p>
+            </section>
+
+            <section id="reflection">
+                <h2>
+                    Reflection
+                </h2>
+                <p>
+                    My reliance on convenience sampling limited the diversity of perspectives in the dataset. Future research would benefit from broader recruitment — ideally across different regions and countries, especially as DJ continues its phased international rollout. Expanding the sample would help validate whether the themes identified here hold across a wider range of listeners.
+                </p>
+                <p>
+                    Looking ahead, future iterations of this research could benefit from a longitudinal approach. While this study captured users' perceptions of DJ at a single point in time, following listeners over a longer period could reveal how their relationship with the feature evolves and whether early impressions hold, shift, or deepen with continued use. Beyond validating or contesting these findings, a longitudinal lens might also illuminate broader patterns in how people engage with personified AI features as they become more integrated into more everyday media experiences.
+                </p>
+                <h4>
+                    On a personal note
+                </h4>
+                <p>
+                    This project was an important learning experience in conducting qualitative research. At the outset, I found myself looking for patterns that could be modeled or predicted — an instinct shaped by my interest in how people build trust with AI-mediated systems. Over time, I learned to let go of that impulse and focus instead on what generative research is designed to do: surface unexpected questions, perspectives, and possibilities.
+                </p>
+                <p>
+                    The study ultimately <i>expanded</i> my thinking rather than narrowing it. It raised new questions about how motivations for using DJ might relate to exploration habits, or how recommender systems can support curiosity without constraining it. These are questions best answered through continued research and experimentation, and I hope this work contributes to a deeper understanding of how people engage with AI-driven listening experiences.
+                </p>
+            </section>
+
+            <div class="glasses-guy-icon-container">
+                <img src="./images/glasses-icons/glasses-guy-green.svg">
+            </div>
+
+            <div class="home-button-bottom-mobile">
+                <a href="./index">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    Home
+                </a>
+            </div>
+        </div>
+        <div class="margin-box">
+
+        </div>
+</body>
+
+</html>

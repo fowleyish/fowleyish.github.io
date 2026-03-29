@@ -1,149 +1,329 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="keywords" content="alex fowle, alexander fowle, ux portfolio, ux designer, ux portfolio examples, ux design portfolio, hci portfolio, human computer interaction design, ux case study, ux case study examples, figma, ux wireframe, ui wireframe, ux mockup, ui mockup, ux prototype, ux user testing, ux usability test, ecoscan, value sensitive design, values sensitive design, vsd">
-        <meta name="description" content="A UX design case study for an environmental sustainability app | Alex Fowle Portfolio">
-        <link rel="shortcut icon" type="image/x-icon" href="FowleyFaviconScaled.ico">
-        <link href="./styles/pagesStyles.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>Portfowleyo - EcoScan</title>
-    </head>
-    <body>
-        <div class="pageContent">
-            <div class="backHome">
-              <a href="./index">Home</a> 
-              <span> > EcoScan</span>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="alex fowle, alexander fowle, ux portfolio, ux designer, ux portfolio examples, ux design portfolio, hci portfolio, human computer interaction design">
+    <meta name="description" content="A UX design/research and HCI portoflio | Alex Fowle Portfolio">
+    <link rel="icon" href="./images/glasses-icons/glasses-guy-green.svg" type="image/svg+xml">
+    <link href="./styles/styles.css" type="text/css" rel="stylesheet">
+    <!--Inter font-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!--Space Grotesk font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--Font Awesome for icons-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <!--Feature script-->
+    <script src="./scripts/features.js"></script>
+    <title>Portfowleyo - EcoScan</title>
+</head>
+
+<body>
+    <div id="zoom-modal">
+        <img id="zoomed-image" alt="">
+    </div>
+
+    <header class="mobile-toc-header">
+        <button class="mobile-toc-toggle" aria-label="Open table of contents">
+            <div class="hamburger">
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
             </div>
-            <h1 class="pageTitle">Case study: EcoScan Recycling Assistant App</h1>
-            <h2 class="projectType">Mobile UX Design <span class="titlePipe">|</span><svg class="timerIcon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m618.924-298.924 42.152-42.152-151.077-151.087V-680h-59.998v212.154l168.923 168.922ZM480.067-100.001q-78.836 0-148.204-29.92-69.369-29.92-120.682-81.21-51.314-51.291-81.247-120.629-29.933-69.337-29.933-148.173t29.92-148.204q29.92-69.369 81.21-120.682 51.291-51.314 120.629-81.247 69.337-29.933 148.173-29.933t148.204 29.92q69.369 29.92 120.682 81.21 51.314 51.291 81.247 120.629 29.933 69.337 29.933 148.173t-29.92 148.204q-29.92 69.369-81.21 120.682-51.291 51.314-120.629 81.247-69.337 29.933-148.173 29.933ZM480-480Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg><span></span> 10 minute read</h2>
-            
-
-            <div class="pageMain">
-                <img class="pageHeaderImage" src="./images/EcoScan/ecoScanFull.png" alt="An image showing 4 key screens of the EcoScan app. From left to right, they are: the home screen, the product information screen, the Dropoff Map screen, and the Recycling Complete confirmation screen. All images are high fidelity mockups made in Figma and displayed in Apple iPhone frames.">
-
-                <div class="detailsContainer">
-                  <div class="detailsSidebar"></div>
-                  <div class="projectDetails">
-                    <div class="projectDetailContainer">
-                      <div class="projectDetailTitle">Team</div>
-                      <div class="projectDetailDescription">Three UX designers and one CS student</div>
-                    </div>
-                    <div class="projectDetailContainer">
-                      <div class="projectDetailTitle">My role</div>
-                      <div class="projectDetailDescription">Lead UX designer and project manager</div>
-                    </div>
-                    <div class="projectDetailContainer">
-                      <div class="projectDetailTitle">Client</div>
-                      <div class="projectDetailDescription">Namibia University of Science and Technology</div>
-                    </div>
-                    <div class="projectDetailContainer">
-                      <div class="projectDetailTitle">Timeline</div>
-                      <div class="projectDetailDescription">February - May 2024</div>
-                    </div>
-                  </div>
+        </button>
+        <div class="mobile-toc-current" aria-live="polite"></div>
+    </header>
+    <div class="mobile-toc-overlay" hidden></div>
+    <aside class="mobile-toc-drawer" aria-hidden="true">
+        <div class="mobile-toc-drawer__inner-accent-card">
+            <div class="mobile-toc-drawer__inner">
+                <div class="header">
+                    <h4>On this page</h4>
+                    <button class="mobile-toc-close" aria-label="Close table of contents">
+                        <svg
+                            class="icon-close"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <line x1="5" y1="5" x2="19" y2="19" />
+                            <line x1="5" y1="19" x2="19" y2="5" />
+                        </svg>
+                    </button>
                 </div>
-                
-              
-
-                <h3 class="pageSectionHeader">Project Purpose</h3>
-                <p class="pageParagraph">This project was completed as a group project in one of my classes in graduate school. The goal of the project was to collaborate with a student from the Namibia University of Science and Technology to design a solution to a social or environmental issue present in Namibia using a modified Value Sensitive Design (VSD) framework. After some reflexive workshopping, which included identifying our own values as designers and as a team, we settled on designing a mobile app that helps users engage in responsible and sustainable recycling practices. </p>
-
-                <h3 class="pageSectionHeader">Discovery and Problem Framing</h3>
-                <p class="pageParagraph">The project began with each team member reflecting on their own positionality and values within the problem space. Emergent values included equality and justice, harm reduction, improved happiness and well-being, and advancing knowledge. Waste management and recycling soon surfaced as a topic that we all had interest in, which touched all the values we identified and satisfied a social need in Namibia (and beyond). </p>
-                <p class="pageParagraph">Following approval of our topic, we conducted extensive research on the state of waste management practices around the world. One major issue we identified is that recycling practices differ depending on local ordinances and jurisdictions. These differences aren't always easily available or ascertainable and make it difficult for people in certain areas to understand what materials can/cannot be recycled or how to dispose of potentially hazardous materials, such as batteries. Thus, it became clear that our solution needed to include comprehensive, redundant, and easy-to-find information about recycling laws in the user's specific area. </p>
-                <p class="pageParagraph">The team then leveraged a method, which we coined “fly-on-the-wall situation mapping,” (involving a combination of fly-on-the-wall observations and situation mapping—not the most creative title, I admit) to identify scenarios of confusion over what can or cannot be recycled, then mapping those scenarios to stakeholders, their values, and underlying themes. Observing waste disposal “in the wild” was a bit of a challenge, but we found some creative ways to get around it. For example, I paid closer attention to how the various bins were used at my work at the restaurant and asked follow-up questions when I noticed something strange happen. Using Miro, the team created associations between themes, values, and stakeholders, which later culminated in product requirements. </p>
-                <img src="./images/EcoScan/fyotSmExample.png" alt="A snippet of a fly-on-the-wall artefact, created in Miro." class="pageContentImage">
-                <p class="imageDescription">An example scenario from the aptly named Fly-on-the-wall Situation Map exercise</p>
-                <p class="pageParagraph">After creating an exhaustive list of potential product features, we implemented two methods to refine the list into the most valuable and impactful system requirements. First, we completed an importance/difficulty matrix as a team to determine which features have the highest impact and greatest technical feasibility:</p>
-                <img src="./images/EcoScan/importanceDifficultyMatrix.png" alt="A screen shot of the Importance/Difficult Matrix in Miro. The items in the top right quadrant are the features we determined were most important and feasible." class="pageContentImage">
-                <p class="pageParagraph">The second method we used to prioritize product features was dot voting, where each team member voted on product features to democratically determine which features were most important for a first pass at a product design. The final artefact was a clean list of features, ranked by importance, which afforded us some wiggle room in case we encountered any unexpected time constraints further on in prototyping. </p>
-                <img src="./images/EcoScan/dotVoting.png" alt="A snippet of the dot voting exercise in Miro" class="pageContentImage">
-                <p class="imageDescription">A snippet of the dot voting exercise in Miro</p>
-                <h3 class="pageSectionHeader">Ideating and Testing Early Mockups</h3>
-                <p class="pageParagraph">Product ideation consisted of many brainstorming meetings and constant collaboration over Miro and Microsoft Teams. Asynchronous collaboration was critical for this project, given that all team members were students with busy schedules and especially considering the time zone differences between the US and Namibia. Meetings consisted of sharing and discussing napkin sketches and other low-fidelity mockups, such as the one seen below.</p>
-                <img src="./images/EcoScan/roughMockups.png" alt="A snippet of early design concepts that the team created one of many brainstorming sessions." class="pageContentImage">
-                <p class="pageParagraph">The team was soon ready for stakeholder feedback. Using the requirements we'd collected and early mockups such as those shown above, we created a few critical workflows as low-fidelity wireframes in Figma, which we then used to guide a brief usability study with product stakeholders. Each team member conducted the study with 3 stakeholders (resulting in 12 total), ranging from service workers and neighbors to community activists and even a waste management employee. We learned a lot from this user testing and ended up with a solid list of changes and improvement opportunities which included various app usability changes, modifications to the app's navigation/IA, and even a few new feature suggestions such as the inclusion of a gamification system to further motivate individuals to engage in sustainable recycling practices. After reflecting on what we learned from user testing and interviews, the team was ready to create high-fidelity prototypes.</p>
-                <h3 class="pageSectionHeader">Final Prototypes</h3>
-                <p class="pageParagraph">Our final solution is an app that encourages users to engage in healthy and sustainable recycling and waste management practices, which includes the following features (among many more):</p>
-                <ul>
-                  <li class="pageParagraph">A recycling wizard that walks users through where and how to dispose of certain items, which is informed by the policies of the user's current location. This wizard offloads the user's need to have local recycling policies memorized.</li>
-                  <li class="pageParagraph">A rewards and achievements system that includes “your impact” cards to congratulate users for making a difference and unlockable “titles” (such as “Eco Squire”) that users can share to social media. This system fosters both a habit of sustainability and self-satisfaction for making a difference, which increases user satisfaction in the app while reducing harm caused by poor waste management practices.</li>
-                </ul>
-                <img src="./images/EcoScan/achievementPanel.png" alt="An image of some few key screens that demonstrate the achievements embedded within the app. Three screens are shown in order. From left to right, the screens show completing a recycling activity, unlocking a new title, and setting the title in the Achievements screen as the user's active title." class="pageContentImage">
-                <ul>
-                  <li class="pageParagraph">Informational sections that elucidate local recycling policies, such as what types of items go in which bins. This section also includes a GPS-enabled map of nearby drop-off spots for large or hazardous materials. These features enrich knowledge building and make it easier for users of EcoScan to frame their contributions to ecological sustainability.</li>
-                </ul>
-                <p class="pageParagraph">The interactive prototypes below demonstrate some of the workflows and features of the final product:</p>
-                <ul>
-                  <li class="pageParagraph"><a href="https://www.figma.com/proto/QnDdVGhLrzpUqYk7iEnvYB/Recycling-app-prototype?page-id=0%3A1&node-id=429-58&viewport=28413%2C-18185%2C1.34&t=Dwy1VPmhNgMWjoOy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=429%3A58&show-proto-sidebar=1" class="pageHref" target="_blank">Recycling an unrecognized item by scanning its barcode and adding the item to EcoScan's database</a></li>
-                  <li class="pageParagraph"><a href="https://www.figma.com/proto/QnDdVGhLrzpUqYk7iEnvYB/Recycling-app-prototype?page-id=0%3A1&node-id=429-154&viewport=36988%2C-26312%2C1.74&t=abiSLdgUVnq4bhy6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=429%3A154&show-proto-sidebar=1" class="pageHref" target="_blank">Recycling an item by scanning its barcode and unlocking/setting an achievement title</a></li>
-                  <li class="pageParagraph"><a href="https://www.figma.com/proto/QnDdVGhLrzpUqYk7iEnvYB/Recycling-app-prototype?page-id=0%3A1&node-id=378-1133&viewport=36988%2C-26312%2C1.74&t=abiSLdgUVnq4bhy6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=378%3A1133&show-proto-sidebar=1" class="pageHref" target="_blank">Navigating the News and Information screens and locating a recycling drop-off spot</a></li>
-                </ul>
-                <h3 class="pageSectionHeader">Retrospective</h3>
-                <p class="pageParagraph">Though the semester ended before we could test the finalized prototypes with the client, our stakeholders at the Namibia University of Science and Technology were pleased with the prototypes and concept. The design satisfied the underlying system values as a feasible solution to a real problem observed not only in Namibia, but worldwide—EcoScan's location-based versatility makes it a useful tool for anyone, anywhere. </p>
-                <p class="pageParagraph">I learned quite a lot along the way. This was my first time leading a UX initiative for an actual client. It was also my first time working on a UX project with an international team. Time zone differences presented challenges to effective collaboration. Through trial-and-error, and with the support and buy-in from everyone on the team, we found a way to leverage online collaboration tools like Miro, Figma, and Microsoft Teams to create a system that brought out the best in all of us. </p>
-                <p class="pageParagraph">Were we to continue with this project, a logical next step would be to launch a large-scale usability and user acceptance study. We could use a prototype testing tool such as Maze.io to automate some amount of this, using metrics such as click errors and Time-To-Task to iteratively improve the app's IA and usability. We could simultaneously conduct user interviews and engage in field studies to collect and analyze qualitative data on users' perceptions of the system and its usefulness. Further iterations could include exercises such as A/B testing and even ethnographic cognitive task analyses to fine-tune designs before deployment. Finally, as should be the case with any technological system, EcoScan would be revisited frequently to search for not only further improvements to the UX of the product, but also to observe its impact on society at large over time to proactively prevent and/or remediate any unintended consequences or misuse cases.
-                <span><?xml version="1.0" encoding="UTF-8"?>
-                    <svg class="articleEndFowleyIcon" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.97 213.57">
-                      <defs>
-                        <style>
-                          .cls-1 {
-                            fill: #29377b;
-                          }
-                    
-                          .cls-2 {
-                            fill: #d34e36;
-                          }
-                    
-                          .cls-3 {
-                            fill: #8e8e8e;
-                          }
-                    
-                          .cls-4 {
-                            fill: #a5a4a4;
-                          }
-                    
-                          .cls-5 {
-                            fill: #999;
-                          }
-                    
-                          .cls-6 {
-                            fill: #2b3990;
-                          }
-                        </style>
-                      </defs>
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <g>
-                          <g>
-                            <polygon class="cls-4" points="0 53.39 0 160.18 92.49 213.57 184.96 160.18 184.96 53.39 92.49 0 0 53.39"/>
-                            <g>
-                              <polygon class="cls-5" points="92.48 106.65 0 53.26 92.29 .13 184.97 53.64 92.48 106.65"/>
-                              <polygon class="cls-3" points="92.48 213.44 184.96 160.04 184.97 53.64 92.48 106.65 92.48 213.44"/>
-                            </g>
-                          </g>
-                          <polygon class="cls-6" points="38.47 171.94 10.47 155.56 10.47 59.32 38.47 75.48 38.47 171.94"/>
-                          <polygon class="cls-6" points="92.53 161.84 13.98 116.67 27.98 92.42 92.49 129.53 92.53 161.84"/>
-                          <polygon class="cls-2" points="146.27 172.44 174.27 156.06 174.27 59.5 146.27 75.98 146.27 172.44"/>
-                          <polygon class="cls-2" points="92.53 161.84 170.76 116.67 156.76 92.42 92.49 129.53 92.53 161.84"/>
-                          <polygon class="cls-1" points="106.5 36.3 38.47 75.57 10.47 59.32 92.5 12.05 106.5 36.3"/>
-                          <polygon class="cls-1" points="78.56 36.3 146.27 75.98 174.27 59.5 92.56 12.05 78.56 36.3"/>
-                        </g>
-                      </g>
-                    </svg>
-                </span></p>
+                <div class="mobile-drawer-toc-container">
+                    <ul class="mobile-toc-links">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#discovery">Discovery and problem framing</a></li>
+                        <li><a href="#ideating">Ideation and early validation</a></li>
+                        <li><a href="#designs">Final designs</a></li>
+                        <li><a href="#reflection">Reflection</a></li>
+                    </ul>
+                    <div class="mobile-toc-divider"></div>
+                    <div class="mobile-toc-links">
+                        <li>
+                            <a href="./index">
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                    </div>
+                </div>
             </div>
-            <div class="returnHomeEnd">
+        </div>
+    </aside>
+    <div class="page">
+        <div class="margin-box left">
+            <div class="toc-card">
+                <h4>On this page</h4>
+                <ul class="contents">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#discovery">Discovery and problem framing</a></li>
+                    <li><a href="#ideating">Ideation and early validation</a></li>
+                    <li><a href="#designs">Final designs</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="home">
+                    <a href="./index">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-box case-study">
+            <section>
+                <div class="page-header">
+                    <h1 class="page-title">Ecoscan recycling assistant</h1>
+                    <div class="type-and-ttr">
+                        <div class="type">
+                            <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                            Design
+                        </div>
+                        <div>|</div>
+                        <div class="time-to-read">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <div>5 minute read</div>
+                        </div>
+                    </div>
+                    <div class="page-image" id="case-study-hero">
+                        <img src="./images/EcoScan/ecoscan-hero.png" alt="A promotional image for EcoScan.">
+                    </div>
+                    <div class="collapsible-container">
+                        <div class="summary-content" id="dropdown-content" style="max-height: 0px;">
+                            <div class="summary-inner">
+                                <dl class="details-grid">
+                                <dt>
+                                    Role
+                                </dt>
+                                <dd>
+                                    UX Designer
+                                </dd>
+                                <dt>
+                                    Timeline
+                                </dt>
+                                <dd>
+                                    March - May 2024
+                                </dd>
+                                <dt>
+                                    Team
+                                </dt>
+                                <dd>
+                                    Three U.S.-based designers, one Namibian engineer
+                                </dd>
+                                <dt>
+                                    Scope
+                                </dt>
+                                <dd>
+                                    Designing a values-algined mobile app that supports informed waste management decisions and healthy habit formation
+                                </dd>
+                                <dt>
+                                    Methods
+                                </dt>
+                                <dd>
+                                    Value Sensitive Design, contextual exploration, rapid sketching, iterative design reviews
+                                </dd>
+                                <dt>
+                                    Deliverables
+                                </dt>
+                                <dd>
+                                    High-fidelity, functional prototypes demonstrating the product's core features
+                                </dd>
+                                <dt>
+                                    Outcome
+                                </dt>
+                                <dd>
+                                    A unified design that helps users navigate a complex environmental problem with confidence
+                                </dd>
+                            </dl>
+                            </div>
+                        </div>
+                        <div class="link-divider">
+                            <a id="toggle-dropdown" class="read-more shadow" role="button" onclick="toggleDropdown()">
+                                <span class="collapsible-label">View Summary</span>
+                                <i class="fa-solid fa-chevron-down icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button id="back-to-top" class="shadow" aria-label="Back to top">
+                    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                </button>
+            </section>
+
+            <section id="introduction">
+                <p>
+                    This project was completed as part of a graduate-level course on designing for social impact, where a small team of designers (myself included) from Iowa State University partnered with a student from the Namibia University of Science and Technology (NUST) to identify and address a meaningful environmental or social challenge. Through early reflexive workshopping, we recognized a shared interest in sustainable waste management and the values surrounding responsible disposal practices — an area each of us could independently research from our respective contexts. 
+                </p>
+                <p>
+                    Using the <span class="bold">Value Sensitive Design (VSD)</span> framework to guide our process, we explored the values, stakeholders, and beliefs that shape recycling behaviors in our respective communities. These conversations ultimately led us to design <span class="bold">EcoScan</span>, a mobile app concept aimed at helping people engage in more accurate and sustainable recycling practices, particularly those who want to make environmentally responsible choices but aren't sure where to begin. 
+                </p>
+            </section>
+
+            <section id="discovery">
+                <h2>
+                    Discovery and problem framing
+                </h2>
+                <p>
+                    To ground the problem, we began with exploratory research into global recycling practices. A clear pattern emerged: recycling rules vary widely by jurisdiction, and this information is often difficult to find or interpret. These inconsistencies contribute to widespread misconceptions about what can and cannot be recycled, creating confusion for people who want to make environmentally responsible choices. This insight signaled that the solution we designed would need to provide clear, location-specific guidance that users could trust. 
+                </p>
+                <p>
+                    The team developed an observational method called <span class="bold">Contextual Value Mapping</span> — a combination of naturalistic observation, contextual inquiry, and value mapping — to better understand where and when confusion occurs and how people navigate uncertainty in their waste management practices. This required some creativity in execution given a team of students with no funding: for example, I became a bit more attentive to how the waste bins were used at the restaurant I worked at (and asked a lot of questions that were probably a bit strange to unsuspecting coworkers), while my colleague spent more time with her neighbors in her apartment complex to better understand how they decided what goes into which dumpster out back. The process wasn't exactly glamorous, but it was instrumental in building an understanding of <span class="bold">how people make decisions</span> regarding waste management and <span class="bold">what their underlying motivations are</span> in doing so, which then surfaced themes that translated nicely into functional requirements for the solution.
+                </p>
+                <div class="image-full">
+                    <img src="./images/EcoScan/fyotSmExample.png" alt="An image showing three screens of the recycling assistance features in the final EcoScan design" class="can-zoom">
+                    <div class="image-subtitle">
+                        Green represents the scenario; Pink, the values; Gold, the affected groups; Yellow, our analysis
+                    </div>
+                </div>
+                <h3>
+                    Priotizing features
+                </h3>
+                <p>
+                    With a broad set of potential features in hand, we used two collaborative prioritization methods to align the team on system functionality. First, we completed an <span class="bold">Importance/Difficulty matrix</span> to identify features with the highest impact and feasibility.
+                </p>
+                <div class="image-full">
+                    <img src="./images/EcoScan/matrix.png" alt="An image showing the dot voting exercise the team completed to finalize initial product feature requirements." class="can-zoom">
+                </div>
+                <p>
+                    We then used <span class="bold">dot voting</span> to democratically select the most essential features for a first-pass prototype. This process resulted in a focused, ranked list of requirements that balances user value and technical feasibility within our time constraints as a student project.
+                </p>
+                <div class="image-full">
+                    <img src="./images/EcoScan/dotVoting.png" alt="An image showing the dot voting exercise the team completed to finalize initial product feature requirements." class="can-zoom">
+                </div>
+                <p>
+                    Through this prioritization process, a few critical system features emerged:
+                </p>
+                <ul class="styled">
+                    <li>
+                        <span class="bold">Scanning:</span> The system needed to recognize both barcoded items and common unmarked materials (like plastic bottles) to provide accurate, community specific recycling guidance.
+                    </li>
+                    <li>
+                        <span class="bold">Positive reinforcement:</span> To encourage sustainable habits, the design incorporated light gamification and cosmetic rewards that keep users engaged over time.
+                    </li>
+                    <li>
+                        <span class="bold">Location-aware education:</span> Reflecting our value of advancing knowledge, the system needed to surface clear, localized information to help users understand how to recycle items correctly in their own neighborhoods.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="ideating">
+                <h2>
+                    Ideation and early validation
+                </h2>
+                <p>
+                    Ideation unfolded through a series of collaborative brainstorming sessions conducted over Miro and Microsoft Teams. Because our team spanned multiple time zones and busy student schedules, asynchronous sketching and concept sharing became essential. These early sessions produced a range of low-fidelity ideas — from quick napkin sketches to simple wireframes — that helped us explore different ways the system could support accurate, sustainable recycling practices.
+                </p>
+                <div class="image-full">
+                    <img src="./images/EcoScan/roughMockups.png" alt="An image showing some rough Miro sketches of key screens" class="can-zoom">
+                </div>
+                <p>
+                    Once we had a few promising directions, we translated our prioritized requirements into low-fidelity workflow designs in Figma. The team then diverged to conduct brief usability sessions on the early workflows, with each designer working with three participants (twelve total) ranging from food service workers and neighbors to community activists and waste management employees. This diverse group of stakeholders provided a breadth of feedback that highlighted opportunities to refine the app's information architecture, clarify key interactions, and introduce new features to better support long-term engagement.
+                </p>
+                <p>
+                    These insights gave us a clear path forward and the confidence to begin developing high-fidelity prototypes.
+                </p>
+            </section>
+
+            <section id="designs">
+                <h2>
+                    Final designs
+                </h2>
+                <p>
+                    Our final concept, <span class="bold">EcoScan</span>, brings together the core values and requirements identified through early explorations of the problem space and the insights uncovered during user testing. The app is designed to help users build sustainable recycling habits through clear guidance, positive reinforcement, and location-specific information. 
+                </p>
+                <h3 class="full-width-li">
+                    Recycling assistance
+                </h3>
+                <div class="image-full">
+                    <img src="./images/EcoScan/scanning-designs.png" alt="An image showing three screens of the recycling assistance features in the final EcoScan design" class="no-image-effects can-zoom">
+                </div>
+                <p>
+                    EcoScan's core feature is a step-by-step recycling wizard that helps users determine where and how to dispose of an item based on local policies. By offloading the effort needed to memorize jurisdiction-specific rules, the system reduces confusion and supports more accurate sorting. 
+                </p>
+                <h3 class="full-width-li">
+                    Positive reinforcement
+                </h3>
+                <div class="image-full">
+                    <img src="./images/EcoScan/reinforcement-designs.png" alt="An image showing three screens of the positive reinforcement features in the final EcoScan design" class="no-image-effects can-zoom">
+                </div>
+                <p>
+                    To encourage long-term engagement and reflect the value of building meaningful habits, we incorporated a lightweight rewards system featuring "your impact" summaries and unlockable titles that users can set in-app or share to social media. These elements reinforce sustainable behaviors and <span class="bold">make personal growth feel visible and rewarding</span>.
+                </p>
+                <h3 class="full-width-li">
+                    Location-aware education
+                </h3>
+                <div class="image-full">
+                    <img src="./images/EcoScan/location-aware-designs.png" alt="An image showing three screens of the location-aware educational features in the final EcoScan design" class="no-image-effects can-zoom">
+                </div>
+                <p>
+                    EcoScan also provides clear, accessible information about local recycling policies, including what belongs in each bin and how to dispose of hazardous or oversized materials in their area. A GPS-enabled map helps users locate nearby drop-off sites, making responsible disposal more convenient.
+                </p>
+                <div class="spacer">
+                    <div></div>
+                </div>
+                <p>
+                    As we finalized the designs, I created a set of lightweight prototypes to help our stakeholders visualize how the core workflows reflected the values at the heart of EcoScan. These prototypes acted as quick communication tools during final reviews, helping both the team and our stakeholders build shared understanding around the product's goals.
+                </p>
+            </section>
+
+            <section id="reflection">
+                <h2>
+                    Reflection
+                </h2>
+                <p>
+                    This project pushed me to grow in ways I didn't anticipate. It was my first experience collaborating with an international teammate on a design project. Coordinating across dramatically different time zones required patience, flexibility, and a willingness to adapt our process. Through many learned lessons and a touch of trial-by-fire, we found a rhythm that allowed us to collaborate effectively and asynchronously using the tools available to us.
+                </p>
+                <p>
+                    Working within the VSD framework also stretched my practice beyond what I was comfortable with to that point in my career. I had to quickly learn a new methodology, translate abstract values into actionable requirements, and stay grounded in the real-world limitations of waste management systems across geographical and cultural contexts. The discovery work specifically demanded a degree of creativity I hadn't yet encountered as a designer used to working primarily with industry-established methods — from observing disposal behaviors "in the wild" (read as: "hanging out by the trash can") to conducting informal interviews on a topic most people don't think about much, I spent a lot of time on the outer limits of my comfort zone and, ultimately, <span class="bold">expanded them to new boundaries</span>.
+                </p>
+                <p>
+                    Overall, the experience bolstered my ability to navigate ambiguity, collaborate across cultures, and design with intention. EcoScan certainly isn't going to solve the world's waste management problem, but it does reflect the growth I experienced as a designer learning to balance values, constraints, and user needs in a short and intensive timeline.
+                </p>
+            </section>
+
+            <div class="glasses-guy-icon-container">
+                <img src="./images/glasses-icons/glasses-guy-green.svg">
+            </div>
+
+            <div class="home-button-bottom-mobile">
                 <a href="./index">
-                    << Return Home
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    Home
                 </a>
             </div>
         </div>
-    </body>
+        <div class="margin-box">
+
+        </div>
+</body>
+<script src="./scripts/zoom.js"></script>
+
 </html>
