@@ -965,6 +965,9 @@ b {
     .home-button-bottom-mobile {
         display: block;
     }
+    .accent-text {
+        font-size: 14.4px;
+    }
     /* Mobile TOC header + slider */
     .mobile-toc-header {
         position: sticky;
