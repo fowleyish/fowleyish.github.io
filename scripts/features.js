@@ -259,3 +259,26 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update on scroll
   window.addEventListener("scroll", updateCurrentSectionFromScroll, { passive: true });
 });
+
+// Pop anchor navigation from the browser's history
+document.addEventListener('click', event => {
+  const link = event.target.closest('a[href^="#"]');
+  if (!link) return;
+
+  const href = link.getAttribute('href');
+
+  // Ignore empty hashes or "#" used as JS triggers
+  if (href === '#' || href === '#!') return;
+
+  const targetId = href.substring(1);
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  event.preventDefault();
+
+  // Smooth scroll (or rely on CSS scroll-behavior)
+  target.scrollIntoView({ behavior: 'smooth' });
+
+  // Replace the URL without adding a history entry
+  history.replaceState(null, '', `#${targetId}`);
+});
