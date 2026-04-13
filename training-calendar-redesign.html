@@ -117,7 +117,7 @@
                         <div>|</div>
                         <div class="time-to-read">
                             <i class="fa-regular fa-clock" aria-hidden="true"></i>
-                            <div>9 minute read</div>
+                            <div>10 minute read</div>
                         </div>
                     </div>
                     <div class="page-image" id="case-study-hero">
@@ -187,7 +187,7 @@
 
             <section id="introduction">
                 <p>
-                    The <span class="bold">Training Calendar</span> is a public website that thousands of early childhood professionals in the state of Michigan rely on to find and register for training events that support credentialing and state-level compliance. Over time, incremental enhancements and one-off feature requests caused the interface to become cluttered and difficult to navigate, especially for users who simply needed to locate the right training quickly. Michigan partnered with my team to simplify this experience. I led the redesign from the ground up, using design to clarify ambiguous requirements, align stakeholders, and ultimately <span class="bold">create a streamlined search workflow</span> that better supports users' goals.
+                    The <span class="bold">Training Calendar</span> is a public website that thousands of early childhood professionals in the state of Michigan rely on to find and register for training events that support credentialing and state-level compliance. Over time, incremental enhancements and one-off feature requests caused the interface to become cluttered and difficult to navigate, especially for users who simply needed to locate the right training quickly. Michigan partnered with my team to simplify this experience. I led the redesign from the ground up, using design iterations to clarify ambiguous requirements, align stakeholders, and ultimately <span class="bold">create a streamlined search workflow</span> that better supports users' goals.
                 </p>
             </section>
 
@@ -205,7 +205,7 @@
                     </div>
                 </div>
                 <p>
-                    Several clear issues emerged:
+                    Several clear issues emerged through these conversations:
                 </p>
                 <ul class="styled">
                     <li>
@@ -215,7 +215,7 @@
                         <span class="bold">Misleading default results:</span> Showing results on page load created a faulty mental model that browsing was the only option, especially since the Search button was visually deprioritized.
                     </li>
                     <li>
-                        <span class="bold">Dense, unscannable result cards:</span> Each card contained so much information that scanning was difficult on desktop and nearly impossible on mobile, where a single card filled the entire screen.
+                        <span class="bold">Dense, unscannable result cards:</span> Each card contained so much information that scanning was difficult on desktop and nearly impossible on mobile, where a single card filled the entire screen (and then some).
                     </li>
                     <li>
                         <span class="bold">No clear support for direct search:</span> The workflow catered to users who wanted a long list of results, forcing users who already knew the exact event they needed to wade through unnecessary UI clutter.
@@ -231,10 +231,10 @@
                     Design iterations
                 </h2>
                 <p>
-                    Because our stakeholders were highly visual, I structured ideation around a series of increasingly refined prototypes rather than traditional low fidelity wireframes. High fidelity interactive Figma prototypes allowed us to validate data placement, interaction patterns, and workflow logic in context, while also giving stakeholders a concrete way to react to emerging requirements.
+                    Because our stakeholders were highly visual, I structured ideation around a series of increasingly refined prototypes rather than traditional low fidelity wireframes. High fidelity interactive Figma prototypes allowed us to validate data placement, interaction patterns, and workflow logic in context, while also giving stakeholders a way to more easily envision gaps in the designs.
                 </p>
                 <p>
-                    Across three prototype iterations — and three corresponding feedback sessions — we continuously refined both the design and the underlying system requirements. Each round surfaced new insights from usability improvements to edge cases we hadn't initially considered. By the final iteration, we had a design that supported all known and anticipated use cases, improved efficiency across desktop and mobile devices, and aligned stakeholders around a clear, unified vision for the new search experience.
+                    Across three prototype iterations — and three corresponding feedback sessions — we continuously refined both the design and the underlying system requirements. Each round surfaced new insights from usability improvements to edge cases we hadn't initially considered. By the final iteration, we had a design that supported all known and anticipated use cases, improved efficiency across desktop and mobile devices, and rallied stakeholders around a clear, unified vision for the new search experience.
                 </p>
                 <h3>
                     First iteration
@@ -274,23 +274,23 @@
                 </p>
                 <ul class="styled">
                     <li>
-                        <span class="bold">Clear separation between Search and Results:</span> I split the experience into two distinct pages—one for initiating a search and one for evaluating results. This aligns with common mental models from modern search engines and immediately reduces the sense of overload present in the original all in one layout.
+                        <span class="bold">Clear separation of Search and Results:</span> I split the experience into two distinct pages—one for initiating a search and one for evaluating results. This aligns with common mental models from modern search engines and immediately reduces the sense of overload present in the original all-in-one layout.
                     </li>
                     <li>
-                        <span class="bold">Typeahead autocomplete on an omnisearch input:</span> To support users who know exactly what they need, the landing page includes a typeahead autocomplete that searches by Training Event Name or ID. Results update as the user types, and selecting a suggestion takes them directly to the Event Overview page, bypassing filters and the results list entirely.
+                        <span class="bold">Typeahead autocomplete on an omnisearch input:</span> To support users who know exactly what they need, the landing page includes a typeahead autocomplete input that searches by Training Event Name or ID. Results update as the user types, and selecting a suggestion takes them directly to the Event Overview page, bypassing filters and the results list entirely.
                     </li>
                     <li>
                         <span class="bold">An "Advanced Search" path for exploratory users:</span> Users who prefer to browse or don't know the exact event they're looking for can expand Advanced Search, which surfaces the most frequently used filters by default and allows expansion into additional filter groups for finer control.
                     </li>
                     <li>
-                        <span class="bold">A dedicated results page optimized for refinement:</span> The results page retains the omnisearch input for quick re queries and displays applied filters as removable chips. Additional filters live behind a full page drawer overlay, signaling a shift into a dedicated refinement mode without overwhelming the main results view.
+                        <span class="bold">A dedicated results page optimized for refinement:</span> The results page retains the omnisearch input for quickly executing new queries and displays applied filters as removable chips. Additional filters live behind a full-page drawer overlay, signaling a shift into a dedicated "refinement mode" without bloating the main results view.
                     </li>
                     <li>
                         <span class="bold">Simplified, scannable search results:</span> Data on results cards were reduced to the essential information needed for quick comparison. A “View more” control reveals additional details on demand, supporting deeper exploration without reintroducing the clutter that previously made scanning difficult—especially on mobile.
                     </li>
                 </ul>
                 <p>
-                    Together, these patterns create a workflow that feels familiar, predictable, and easy to learn without instructions. The primary goal for this first iteration was to anchor the redesign in established search behaviors while resolving the pain points that had accumulated over years of incremental changes.
+                    Together, these patterns create a workflow that feels familiar, predictable, and easy to learn without instructions. The primary goal for this first iteration was to anchor the redesign in established search patterns while resolving the pain points that had accumulated over years of incremental changes.
                 </p>
                 <h4>
                     Client feedback
@@ -303,10 +303,10 @@
                 </p>
                 <ul class="styled">
                     <li>
-                        The landing page needed space for welcome messaging and a prominent “Featured Training” event. These were legacy features that didn't make it into the initial redesign but were identified as being critically important.
+                        The landing page needed space for welcome messaging and a prominent “Featured Training” event. These were legacy features that didn't make it into the initial redesign but were identified as being crucial.
                     </li>
                     <li>
-                        Filters felt too hidden. Labeling them “Advanced” risked confusing users who rely on common filters that don't <i>feel</i> “advanced” to users.
+                        Filters felt too hidden. Labeling them “Advanced” risked confusing users who rely on common filters that don't <i>feel</i> “advanced” to them.
                     </li>
                 </ul>
                 <p>
@@ -347,7 +347,7 @@
                 </p>
                 <ul class="styled">
                     <li>
-                        They requested <span class="bold">contextual help</span> for the omnisearch input, anticipating that many users have low technical proficiency and may not understand how to use typeahead search. This <span class="bold">reframed my assumptions</span> about user capability and highlighted the need for clearer guidance.
+                        They requested <span class="bold">contextual help</span> for the omnisearch input, anticipating that many users have low technical proficiency and may not understand how to use typeahead search. This <span class="bold">reframed my assumptions</span> about user capability and emphasized the need for more guidance.
                     </li>
                     <li>
                         They wanted <span class="bold">more than one featured training event</span> on the landing page.
@@ -363,7 +363,7 @@
                     Final designs
                 </h3>
                 <p>
-                    The third — and ultimately final — iteration brought together the remaining requirements into a cohesive, streamlined experience that supports every major user path without adding unnecessary complexity. This round focused on integrating contextual help, expanding shortcut paths into the system, and modernizing the visual design (while staying consistent with system standards) to signal that this is a fully rebuilt experience. A more polished, contemporary interface is important not just for aesthetics and delight, but for <span class="bold">establishing trust and credibility</span> with users who had struggled with the legacy workflow.
+                    The third — and ultimately final — iteration brought together the remaining requirements into a cohesive, streamlined experience that supports every major user path without adding unnecessary complexity. This round focused on integrating contextual help, surfacing shortcut paths, and modernizing the visual design (while staying consistent with system standards) to signal that this is a fully rebuilt experience. A more polished, contemporary interface is important not just for aesthetics and delight, but for <span class="bold">earning trust and establishing credibility</span>, especially with users who had struggled with the legacy workflow.
                 </p>
                 <div class="carousel" id="final-iteration-carousel">
                     <div class="carousel-focus-container desktop">
@@ -392,7 +392,7 @@
                 <p>Key revisions in the final design include:</p>
                 <ul class="styled">
                     <li>
-                        <span class="bold">A two-column landing page layout:</span> This structure allowed multiple Featured Training events to surface without pushing the search functionality out of view or diluting its importance.
+                        <span class="bold">A two-column landing page layout:</span> This architecture allowed multiple Featured Training events to surface without pushing the search functionality out of view or diluting its importance.
                     </li>
                     <li>
                         <span class="bold">Contextual help integrated directly into the interface:</span> Prominent "Help" buttons open lightweight modals that explain how the omnisearch and filters work, supporting users with lower technical proficiency and reducing friction in the early stages of the workflow.
@@ -409,10 +409,10 @@
                         Applied Filters chips now appear everywhere there are filters: on the landing page, results page, and results page filter drawer. This provides users with a consistent experience and convenient control over their queries.
                     </li>
                     <li>
-                        The addition of a “Remove all” chip alongside other Applied Filters allows users to reset their search with a single action.
+                        The addition of a “Remove all” chip alongside other Applied Filters allows users to reset their search with a single interaction.
                     </li>
                     <li>
-                        I brought the “View Overview” and “Register” buttons to the top level of each result card after realizing that burying these critical actions under expandable content in earlier iterations contrasts user expectations and risks creating tension in the user journey.
+                        I raised the “View Overview” and “Register” buttons to the top level of each result card after realizing that burying these critical actions under expandable content in earlier iterations defies user expectations and risks creating tension in the user journey.
                     </li>
                 </ul>
                 <p>
@@ -422,7 +422,7 @@
                     Mobile designs
                 </h3>
                 <p>
-                    With the introduction of a two-column layout and more complexity in interactive elements, I created dedicated mobile designs to ensure the experience remained consistent, accessible, and intuitive across devices. In line with other patterns in the redesign, the mobile version relies on drawers, overlays, and collapsible sections to preserve clarity without overwhelming the limited viewport.
+                    With the introduction of a two-column layout and more complexity in interactive elements, I created dedicated mobile designs to demonstrate that the experience remained consistent, accessible, and intuitive across devices. In line with other patterns in the redesign, the mobile version relies on drawers, overlays, and collapsible sections to preserve clarity without cluttering the limited viewport.
                 </p>
                 <div class="carousel" id="mobile-carousel">
                     <div class="carousel-focus-container desktop">
@@ -457,10 +457,10 @@
                         Featured Training events become a single button that opens a drawer overlay containing the full list.
                     </li>
                     <li>
-                        Popular Searches and Search Filters collapse into expandable sections to reduce clutter for users who don't need them.
+                        Popular Searches and Search Filters collapse into expandable sections to reduce noise on the landing page for users who don't need them.
                     </li>
                     <li>
-                        The omnisearch input transforms into a full screen overlay when selected. This accommodates mobile keyboards, provides clear instructions, and creates space for a more elegant typeahead experience.
+                        The omnisearch input transforms into a full screen overlay when selected. This accommodates mobile keyboards, provides clear instructions, and enables a more elegant typeahead experience.
                     </li>
                     <li>
                         Many interactive elements — including Applied Filters and Popular Searches chips — were resized to meet <span class="bold">WCAG 2.1 AA touch-target guidelines</span>.
@@ -503,7 +503,7 @@
                     Ongoing work
                 </h2>
                 <p>
-                    At the time of this writing, I'm finalizing the artefacts needed for a smooth design to development handoff. This includes <span class="bold">scenario-based interaction flows</span> that clarify how each components behave in different user paths, as well as <span class="bold">annotated designs</span> that document styling and structural details for front end implementation. I'll continue partnering with the development team to ensure accessibility, oversee functional integrity, and support the integration of these components into the broader design system.
+                    At the time of this writing, I'm finalizing the artefacts needed for a smooth handoff to engineering. This includes <span class="bold">scenario-based interaction flows</span> that clarify how each components behave in different user paths, as well as <span class="bold">annotated designs</span> that document styling and structural details for front end implementation. I'll continue partnering with the development team to ensure accessibility, oversee functional integrity, and support the integration of these components into the broader design system.
                 </p>
                 <h4>
                     Future research
@@ -520,7 +520,7 @@
                     </li>
                 </ol>
                 <p>
-                    Combined, these studies would deepen the team's understanding of user needs and ensure the redesigned experience continues to evolve in a <span class="bold">data-informed, user-centered</span> way.
+                    Combined, these studies would deepen the team's understanding of user needs and guarantee the redesigned experience continues to evolve in a <span class="bold">data-informed, user-centered</span> way.
                 </p>
             </section>
 
@@ -529,7 +529,7 @@
                     Reflection
                 </h2>
                 <p>
-                    This project gave me valuable space to deepen my practice as a designer that values using design to converge on system requirements rooted in user-centered design principles. Managing the end-to-end UX process — from shaping ambiguous requirements to preparing a full design to dev handoff — provided me another opportunity to refine how I organize complex work, structure decision making, and guide cross-functional teams toward consensus.
+                    This project gave me valuable space to deepen my practice as a designer that values leveraging design to converge on system requirements rooted in user-centered design principles. Managing the end-to-end UX process — from shaping ambiguous requirements to preparing a full design-to-dev handoff — provided me another opportunity to refine how I organize complex work, structure decision making, and guide cross-functional teams toward consensus.
                 </p>
                 <p>
                     The constraints, while challenging to navigate, pushed me toward growth. Designing for thousands of users without direct access to them required a disciplined, strategic approach to understanding the problem space. Careful scenario planning, structured evaluation methods, and close collaboration with the product owner and client helped <span class="bold">move the project from uncertainty to success</span>.
