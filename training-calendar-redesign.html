@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="Reimagining a public search workflow used by thousands. | Portfowleyo">
+    <link rel="icon" href="./images/glasses-icons/glasses-guy-favicon.svg" type="image/svg+xml">
+    <link href="./styles/styles.css" type="text/css" rel="stylesheet">
+    <!--Inter font-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!--Space Grotesk font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--Font Awesome for icons-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <!--Feature script-->
+    <script src="./scripts/features.js"></script>
+    <title>Portfowleyo - Training Calendar Redesign</title>
+    <!--Preview-->
+    <meta property="og:title" content="Portfowleyo — Training Calendar Redesign">
+    <meta property="og:description" content="Reimagining a public search workflow used by thousands">
+    <meta property="og:image" content="https://portfowleyo.com/images/training-calendar/thumbnail.png">
+    <meta property="og:url" content="https://portfowleyo.com/training-calendar-redesign">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--noindex-->
+    <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+    <div id="zoom-modal">
+        <img id="zoomed-image" alt="">
+    </div>
+
+    <header class="mobile-toc-header">
+        <button class="mobile-toc-toggle" aria-label="Open table of contents">
+            <div class="hamburger">
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
+                <div class="ingredient"></div>
+            </div>
+        </button>
+        <div class="mobile-toc-current" aria-live="polite"></div>
+    </header>
+    <div class="mobile-toc-overlay" hidden></div>
+    <aside class="mobile-toc-drawer" aria-hidden="true">
+        <div class="mobile-toc-drawer__inner-accent-card">
+            <div class="mobile-toc-drawer__inner">
+                <div class="header">
+                    <h4>On this page</h4>
+                    <button class="mobile-toc-close" aria-label="Close table of contents">
+                        <svg
+                            class="icon-close"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <line x1="5" y1="5" x2="19" y2="19" />
+                            <line x1="5" y1="19" x2="19" y2="5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile-drawer-toc-container">
+                    <ul class="mobile-toc-links">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#discovery">Discovery and problem framing</a></li>
+                        <li><a href="#design">Design iterations</a></li>
+                        <li><a href="#prototypes">Interactive prototypes</a></li>
+                        <li><a href="#ongoing">Ongoing work</a></li>
+                        <li><a href="#reflection">Reflection</a></li>
+                    </ul>
+                    <div class="mobile-toc-divider"></div>
+                    <div class="mobile-toc-links">
+                        <li>
+                            <a href="/">
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="page">
+        <div class="margin-box left">
+            <div class="toc-card">
+                <h4>On this page</h4>
+                <ul class="contents">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#discovery">Discovery and problem framing</a></li>
+                    <li><a href="#design">Design iterations</a></li>
+                    <li><a href="#prototypes">Interactive prototypes</a></li>
+                    <li><a href="#ongoing">Ongoing work</a></li>
+                    <li><a href="#reflection">Reflection</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="home">
+                    <a href="/">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-box case-study">
+            <section>
+                <div class="page-header">
+                    <h1 class="page-title">Training Calendar redesign</h1>
+                    <div class="type-and-ttr">
+                        <div class="type">
+                            <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                            Design
+                        </div>
+                        <div>|</div>
+                        <div class="time-to-read">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <div>9 minute read</div>
+                        </div>
+                    </div>
+                    <div class="page-image" id="case-study-hero">
+                        <img src="./images/training-calendar/hero.png" alt="A promotional image for EcoScan.">
+                    </div>
+                    <div class="collapsible-container">
+                        <div class="summary-content" id="dropdown-content" style="max-height: 0px;">
+                            <div class="summary-inner">
+                                <dl class="details-grid">
+                                <dt>
+                                    Role
+                                </dt>
+                                <dd>
+                                    UX Designer
+                                </dd>
+                                <dt>
+                                    Timeline
+                                </dt>
+                                <dd>
+                                    March - April 2026
+                                </dd>
+                                <dt>
+                                    Team
+                                </dt>
+                                <dd>
+                                    Solo designer, collaborating with a product owner, development team, and external stakeholders
+                                </dd>
+                                <dt>
+                                    Scope
+                                </dt>
+                                <dd>
+                                    Defining and clarifying requirements, designing a streamlined search workflow, and preparing a complete design-to-dev handoff
+                                </dd>
+                                <dt>
+                                    Methods
+                                </dt>
+                                <dd>
+                                    Iterative design, rapid prototyping, cognitive walkthroughs
+                                </dd>
+                                <dt>
+                                    Deliverables
+                                </dt>
+                                <dd>
+                                    High-fidelity interactive prototypes for desktop and mobile devices, implementation specifications for engineering
+                                </dd>
+                                <dt>
+                                    Outcome
+                                </dt>
+                                <dd>
+                                    A modernized, user-centered search experience shaped by using design to foster alignment
+                                </dd>
+                            </dl>
+                            </div>
+                        </div>
+                        <div class="link-divider">
+                            <a id="toggle-dropdown" class="read-more shadow" role="button" onclick="toggleDropdown()">
+                                <span class="collapsible-label">View Summary</span>
+                                <i class="fa-solid fa-chevron-down icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button id="back-to-top" class="shadow" aria-label="Back to top">
+                    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                </button>
+            </section>
+
+            <section id="introduction">
+                <p>
+                    The <span class="bold">Training Calendar</span> is a public website that thousands of early childhood professionals in the state of Michigan rely on to find and register for training events that support credentialing and state-level compliance. Over time, incremental enhancements and one-off feature requests caused the interface to become cluttered and difficult to navigate, especially for users who simply needed to locate the right training quickly. Michigan partnered with my team to simplify this experience. I led the redesign from the ground up, using design to clarify ambiguous requirements, align stakeholders, and ultimately <span class="bold">create a streamlined search workflow</span> that better supports users' goals.
+                </p>
+            </section>
+
+            <section id="discovery">
+                <h2>
+                    Discovery and problem framing
+                </h2>
+                <p>
+                    I joined the project early on to help clarify functional requirements and understand why users struggled with the existing Training Event Calendar. While I couldn't speak directly with end users, I collaborated closely with state-level stakeholders who had deep insight into user complaints, support tickets, and common usage patterns. 
+                </p>
+                <div class="image-full">
+                    <img src="./images/training-calendar/legacy-system.png" alt="An image showing the legacy MiRegistry Training Calendar design" class="can-zoom">
+                    <div class="image-subtitle">
+                        The legacy MiRegistry Training Calendar design
+                    </div>
+                </div>
+                <p>
+                    Several clear issues emerged:
+                </p>
+                <ul class="styled">
+                    <li>
+                        <span class="bold">Filter overload:</span> The left panel displayed every filter at once, overwhelming users and obscuring the few filters — like Area of Interest and Sponsor Name — that were actually meaningful to them.
+                    </li>
+                    <li>
+                        <span class="bold">Misleading default results:</span> Showing results on page load created a faulty mental model that browsing was the only option, especially since the Search button was visually deprioritized.
+                    </li>
+                    <li>
+                        <span class="bold">Dense, unscannable result cards:</span> Each card contained so much information that scanning was difficult on desktop and nearly impossible on mobile, where a single card filled the entire screen.
+                    </li>
+                    <li>
+                        <span class="bold">No clear support for direct search:</span> The workflow catered to users who wanted a long list of results, forcing users who already knew the exact event they needed to wade through unnecessary UI clutter.
+                    </li>
+                </ul>
+                <p>
+                    With these pain points in view, I partnered with the Product Owner to translate them into early success criteria. I then sketched initial concepts to build internal alignment around the core functionality and to begin shaping a clearer, more intentional search experience.
+                </p>
+            </section>
+
+            <section id="design">
+                <h2>
+                    Design iterations
+                </h2>
+                <p>
+                    Because our stakeholders were highly visual, I structured ideation around a series of increasingly refined prototypes rather than traditional low fidelity wireframes. High fidelity interactive Figma prototypes allowed us to validate data placement, interaction patterns, and workflow logic in context, while also giving stakeholders a concrete way to react to emerging requirements.
+                </p>
+                <p>
+                    Across three prototype iterations — and three corresponding feedback sessions — we continuously refined both the design and the underlying system requirements. Each round surfaced new insights from usability improvements to edge cases we hadn't initially considered. By the final iteration, we had a design that supported all known and anticipated use cases, improved efficiency across desktop and mobile devices, and aligned stakeholders around a clear, unified vision for the new search experience.
+                </p>
+                <h3>
+                    First iteration
+                </h3>
+                <p>
+                    The first prototype translated the initial requirements into a cleaner, more intentional workflow centered on simplicity and <span class="bold">contextual separation</span>. To keep early conversations focused on functionality rather than aesthetics, I built this iteration using familiar components from the existing design system. This helped stakeholders quickly understand the proposed workflow while enabling rapid iteration without prematurely investing in new component variants.
+                </p>
+                <div class="carousel" id="first-iteration-carousel">
+                    <div class="carousel-focus-container desktop">
+                        <div class="carousel-focus-container-image-container">
+                            <img src="./images/training-calendar/i1/landing.png" class="can-zoom">
+                        </div>
+                        <div class="carousel-focus-container-subtitle">
+                            The landing page of the first design iteration
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button shadow focused">
+                            <img src="./images/training-calendar/i1/landing.png" alt="The landing page of the first design iteration">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i1/omnisearch-expanded.png" alt="The omnisearch typeahead input expanded with visible autocomplete results">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i1/advanced-expanded.png" alt="The Advanced section expanded, exposing search filters">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i1/results.png" alt="The dedicated results page with expandable result cards">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i1/filters-drawer.png" alt="The filters drawer overlaying the results page">
+                        </button>
+                    </div>
+                </div>
+                <p>
+                    Key features of this iteration include:
+                </p>
+                <ul class="styled">
+                    <li>
+                        <span class="bold">Clear separation between Search and Results:</span> I split the experience into two distinct pages—one for initiating a search and one for evaluating results. This aligns with common mental models from modern search engines and immediately reduces the sense of overload present in the original all in one layout.
+                    </li>
+                    <li>
+                        <span class="bold">Typeahead autocomplete on an omnisearch input:</span> To support users who know exactly what they need, the landing page includes a typeahead autocomplete that searches by Training Event Name or ID. Results update as the user types, and selecting a suggestion takes them directly to the Event Overview page, bypassing filters and the results list entirely.
+                    </li>
+                    <li>
+                        <span class="bold">An "Advanced Search" path for exploratory users:</span> Users who prefer to browse or don't know the exact event they're looking for can expand Advanced Search, which surfaces the most frequently used filters by default and allows expansion into additional filter groups for finer control.
+                    </li>
+                    <li>
+                        <span class="bold">A dedicated results page optimized for refinement:</span> The results page retains the omnisearch input for quick re queries and displays applied filters as removable chips. Additional filters live behind a full page drawer overlay, signaling a shift into a dedicated refinement mode without overwhelming the main results view.
+                    </li>
+                    <li>
+                        <span class="bold">Simplified, scannable search results:</span> Data on results cards were reduced to the essential information needed for quick comparison. A “View more” control reveals additional details on demand, supporting deeper exploration without reintroducing the clutter that previously made scanning difficult—especially on mobile.
+                    </li>
+                </ul>
+                <p>
+                    Together, these patterns create a workflow that feels familiar, predictable, and easy to learn without instructions. The primary goal for this first iteration was to anchor the redesign in established search behaviors while resolving the pain points that had accumulated over years of incremental changes.
+                </p>
+                <h4>
+                    Client feedback
+                </h4>
+                <p>
+                    Stakeholders immediately recognized this iteration as a major improvement. The streamlined workflow made it easier for most users to find the right training quickly, while still supporting more advanced needs.
+                </p>
+                <p>
+                    Two critical gaps emerged through the discussion that followed my presentation:
+                </p>
+                <ul class="styled">
+                    <li>
+                        The landing page needed space for welcome messaging and a prominent “Featured Training” event. These were legacy features that didn't make it into the initial redesign but were identified as being critically important.
+                    </li>
+                    <li>
+                        Filters felt too hidden. Labeling them “Advanced” risked confusing users who rely on common filters that don't <i>feel</i> “advanced” to users.
+                    </li>
+                </ul>
+                <p>
+                    With this feedback — and a quick internal alignment session — I moved into the next iteration.
+                </p>
+                <h3>
+                    Second iteration
+                </h3>
+                <p>
+                    The second prototype focused on addressing the gaps identified in the first iteration — specifically, restoring key content to the landing page and improving the visibility of common filters. Balancing simplicity with usability was challenging without direct user testing, so I relied on <span class="bold">cognitive walkthroughs</span> to evaluate the design from the perspective of different user types. This helped me surface the most essential filters by default while still keeping less frequent filters accessible under an “Advanced” section.
+                </p>
+                <div class="carousel" id="second-iteration-carousel">
+                    <div class="carousel-focus-container desktop">
+                        <div class="carousel-focus-container-image-container">
+                            <img src="./images/training-calendar/i2/landing.png" class="can-zoom">
+                        </div>
+                        <div class="carousel-focus-container-subtitle">
+                            The landing page of the second iteration, with a featured training card and welcome text
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button shadow focused">
+                            <img src="./images/training-calendar/i2/landing.png" alt='The landing page of the second iteration included a featured training card and welcome text'>
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i2/filters-expanded.png" alt='Less common filters are included under an expandable "Advanced" section'>
+                        </button>
+                    </div>
+                </div>
+                <p>
+                    Adding welcome text and a Featured Training card introduced new layout pressures. I became concerned that the omnisearch input — the primary entry point for most users — was slipping too far down the page/"below the fold" and losing prominence. To preserve its importance, I introduced a subtle colored border and a “Training Search” header, ensuring the search field remained visually dominant even on mobile.
+                </p>
+                <h4>
+                    Client feedback
+                </h4>
+                <p>
+                    The client appreciated these improvements but raised new questions that shaped the next iteration:
+                </p>
+                <ul class="styled">
+                    <li>
+                        They requested <span class="bold">contextual help</span> for the omnisearch input, anticipating that many users have low technical proficiency and may not understand how to use typeahead search. This <span class="bold">reframed my assumptions</span> about user capability and highlighted the need for clearer guidance.
+                    </li>
+                    <li>
+                        They wanted <span class="bold">more than one featured training event</span> on the landing page.
+                    </li>
+                    <li>
+                        They asked for a way to <span class="bold">quickly access curated groups of events</span> — essentially, shortcut paths to relevant results lists without requiring users to guess at the correct combination of filters.
+                    </li>
+                </ul>
+                <p>
+                    These requests pushed the design toward greater complexity, and I was initially concerned the design would begin to drift away from the original goal of simplifying the experience. However, as I explored solutions, I found an approach that preserved simplicity without sacrificing functionality, setting the stage for the next iteration.
+                </p>
+                <h3>
+                    Final designs
+                </h3>
+                <p>
+                    The third — and ultimately final — iteration brought together the remaining requirements into a cohesive, streamlined experience that supports every major user path without adding unnecessary complexity. This round focused on integrating contextual help, expanding shortcut paths into the system, and modernizing the visual design (while staying consistent with system standards) to signal that this is a fully rebuilt experience. A more polished, contemporary interface is important not just for aesthetics and delight, but for <span class="bold">establishing trust and credibility</span> with users who had struggled with the legacy workflow.
+                </p>
+                <div class="carousel" id="final-iteration-carousel">
+                    <div class="carousel-focus-container desktop">
+                        <div class="carousel-focus-container-image-container">
+                            <img src="./images/training-calendar/i3/landing.png" class="can-zoom">
+                        </div>
+                        <div class="carousel-focus-container-subtitle">
+                            The landing page of the final iteration utilized a two-column layout
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button shadow focused">
+                            <img src="./images/training-calendar/i3/landing.png" alt='The landing page of the final iteration utilized a two-column layout with the new Popular Searches chips'>
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i3/context-help.png" alt="In-context help was added to support users with limited technical proficiency">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i3/chips-results.png" alt='A "Remove all" chip was added to Applied Filters to easily reset a search'>
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/i3/result-cards.png" alt="Result cards were visually modernized and surfaced action buttons above the collapsible content">
+                        </button>
+                    </div>
+                </div>
+                <p>Key revisions in the final design include:</p>
+                <ul class="styled">
+                    <li>
+                        <span class="bold">A two-column landing page layout:</span> This structure allowed multiple Featured Training events to surface without pushing the search functionality out of view or diluting its importance.
+                    </li>
+                    <li>
+                        <span class="bold">Contextual help integrated directly into the interface:</span> Prominent "Help" buttons open lightweight modals that explain how the omnisearch and filters work, supporting users with lower technical proficiency and reducing friction in the early stages of the workflow.
+                    </li>
+                    <li>
+                        <span class="bold">Adding "Popular Searches" as curated search shortcuts:</span> A group of "chips" represent predefined combinations of filters — "bundled" queries that take users directly to a relevant results list. This gives specific user groups a fast path to functionally grouped training events without requiring them to configure filters manually.
+                    </li>
+                </ul>
+                <p>
+                    To elevate the experience from "usable" to <span class="bold">truly intuitive</span>, I added a few quality-of-life enhacements to the design:
+                </p>
+                <ul class="styled">
+                    <li>
+                        Applied Filters chips now appear everywhere there are filters: on the landing page, results page, and results page filter drawer. This provides users with a consistent experience and convenient control over their queries.
+                    </li>
+                    <li>
+                        The addition of a “Remove all” chip alongside other Applied Filters allows users to reset their search with a single action.
+                    </li>
+                    <li>
+                        I brought the “View Overview” and “Register” buttons to the top level of each result card after realizing that burying these critical actions under expandable content in earlier iterations contrasts user expectations and risks creating tension in the user journey.
+                    </li>
+                </ul>
+                <p>
+                    These changes collectively strengthen the system's intuitiveness, reduce cognitive load, and ensure that the most important actions are both salient and easy to access.
+                </p>
+                <h3>
+                    Mobile designs
+                </h3>
+                <p>
+                    With the introduction of a two-column layout and more complexity in interactive elements, I created dedicated mobile designs to ensure the experience remained consistent, accessible, and intuitive across devices. In line with other patterns in the redesign, the mobile version relies on drawers, overlays, and collapsible sections to preserve clarity without overwhelming the limited viewport.
+                </p>
+                <div class="carousel" id="mobile-carousel">
+                    <div class="carousel-focus-container desktop">
+                        <div class="carousel-focus-container-image-container">
+                            <img src="./images/training-calendar/mobile/finalized/landing.png" class="can-zoom mobile-shadow">
+                        </div>
+                        <div class="carousel-focus-container-subtitle">
+                            The landing page of the mobile prototype
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button shadow focused">
+                            <img src="./images/training-calendar/mobile/finalized/landing.png" alt='The landing page of the mobile prototype' class="mobile-shadow">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/mobile/finalized/featured-events.png" alt="Featured Events were moved into a full-screen overlay" class="mobile-shadow">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/mobile/finalized/omnisearch.png" alt='The omnisearch is in a full-screen overlay with embedded instructions to accomodate mobile differences' class="no-shadow">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/mobile/finalized/filters-expanded.png" alt='Filter subsections were condensed into collapsible elements' class="mobile-shadow">
+                        </button>
+                        <button class="carousel-button shadow">
+                            <img src="./images/training-calendar/mobile/finalized/featured-events.png" alt="The mobile results page" class="mobile-shadow">
+                        </button>
+                    </div>
+                </div>
+                <p>Key adaptations include:</p>
+                <ul class="styled">
+                    <li>
+                        Featured Training events become a single button that opens a drawer overlay containing the full list.
+                    </li>
+                    <li>
+                        Popular Searches and Search Filters collapse into expandable sections to reduce clutter for users who don't need them.
+                    </li>
+                    <li>
+                        The omnisearch input transforms into a full screen overlay when selected. This accommodates mobile keyboards, provides clear instructions, and creates space for a more elegant typeahead experience.
+                    </li>
+                    <li>
+                        Many interactive elements — including Applied Filters and Popular Searches chips — were resized to meet <span class="bold">WCAG 2.1 AA touch-target guidelines</span>.
+                    </li>
+                </ul>
+                <p>
+                    The client responded enthusiastically to these updates, especially after interacting with the mobile prototype. Without sacrificing simplicity or elegance, this final iteration met all emerging requirements and established a scalable, extensible workflow that can support future enhancements.
+                </p>
+            </section>
+
+            <section id="prototypes">
+                <h2>
+                    Interactive prototypes
+                </h2>
+                <p>
+                    The buttons below lead to the same desktop and mobile prototypes that ultimately received final approval from the client. They highlight the motion, transitions, and interaction patterns that make the experience both intuitive and expressive.
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card shadow">
+                        <a href="https://www.figma.com/proto/EnGPeXRIIZ8g9SfbIG5jtq/Training-Calendar?node-id=556-3866&p=f&viewport=-611%2C-42%2C0.27&t=t9UEJY2J6sXQHK2E-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=556%3A3959" target="_blank" class="link">
+                            <img src="./images/training-calendar/desktop-prototype.png" class="image">
+                            <div class="title">
+                                Desktop prototype <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-card shadow">
+                        <a href="https://www.figma.com/proto/EnGPeXRIIZ8g9SfbIG5jtq/Training-Calendar?node-id=500-2287&p=f&viewport=-669%2C253%2C0.3&t=t9UEJY2J6sXQHK2E-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=500%3A8159" target="_blank" class="link">
+                            <img src="./images/training-calendar/mobile-prototype.png" class="image">
+                            <div class="title">
+                                Mobile prototype <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ongoing">
+                <h2>
+                    Ongoing work
+                </h2>
+                <p>
+                    At the time of this writing, I'm finalizing the artefacts needed for a smooth design to development handoff. This includes <span class="bold">scenario-based interaction flows</span> that clarify how each components behave in different user paths, as well as <span class="bold">annotated designs</span> that document styling and structural details for front end implementation. I'll continue partnering with the development team to ensure accessibility, oversee functional integrity, and support the integration of these components into the broader design system.
+                </p>
+                <h4>
+                    Future research
+                </h4>
+                <p>
+                    One limitation of this project was the lack of direct access to end users; most insights came from well-informed but secondary sources. As the redesign moves forward, two research approaches in particular would meaningfully strengthen the solution:
+                </p>
+                <ol class="styled">
+                    <li>
+                        <span class="bold">A generative qualitative study</span> to understand what users value most when searching for training events. This would help refine which data appear by default on result cards, which Popular Searches should be prioritized, and which Featured Training events deserve prominent placement.
+                    </li>
+                    <li>
+                        <span class="bold">A large-scale survey</span> to quantify real world usage patterns. This would validate assumptions about how users navigate the system, helping the team optimize the experience for the most common workflows and identify opportunities for future enhancements based on the frequency of certain use cases.
+                    </li>
+                </ol>
+                <p>
+                    Combined, these studies would deepen the team's understanding of user needs and ensure the redesigned experience continues to evolve in a <span class="bold">data-informed, user-centered</span> way.
+                </p>
+            </section>
+
+            <section id="reflection">
+                <h2>
+                    Reflection
+                </h2>
+                <p>
+                    This project gave me valuable space to deepen my practice as a designer that values using design to converge on system requirements rooted in user-centered design principles. Managing the end-to-end UX process — from shaping ambiguous requirements to preparing a full design to dev handoff — provided me another opportunity to refine how I organize complex work, structure decision making, and guide cross-functional teams toward consensus.
+                </p>
+                <p>
+                    The constraints, while challenging to navigate, pushed me toward growth. Designing for thousands of users without direct access to them required a disciplined, strategic approach to understanding the problem space. Careful scenario planning, structured evaluation methods, and close collaboration with the product owner and client helped <span class="bold">move the project from uncertainty to success</span>.
+                </p>
+                <p class="soundbyte">
+                    Good design isn't just about pushing pixels around on a screen — it's an invaluable tool to mediate communication, build shared understanding, and transform ideas into reality.
+                </p>
+            </section>
+
+            <script>
+                document.querySelectorAll('.carousel').forEach(carousel => {
+                const focusContainer = carousel.querySelector('.carousel-focus-container-image-container');
+                const focusSubtitle = carousel.querySelector('.carousel-focus-container-subtitle');
+                const buttons = carousel.querySelectorAll('.carousel-button');
+
+                buttons.forEach(button => {
+                    button.addEventListener('click', () => {
+                    const thumbImg = button.querySelector('img');
+
+                    // 1. Create a new img element based on the thumbnail
+                    const newImg = thumbImg.cloneNode(true);
+                    newImg.classList.add('can-zoom'); // ensure focused image has this class
+
+                    // 2. Replace the existing focused image
+                    const currentImg = focusContainer.querySelector('img');
+                    if (currentImg) {
+                        focusContainer.replaceChild(newImg, currentImg);
+                    } else {
+                        focusContainer.appendChild(newImg);
+                    }
+
+                    // 3. Update subtitle from alt
+                    focusSubtitle.textContent = thumbImg.alt;
+
+                    // 4. Update focused state on buttons
+                    buttons.forEach(btn => btn.classList.remove('focused'));
+                    button.classList.add('focused');
+                    });
+                });
+                });
+            </script>
+
+            <div class="glasses-guy-icon-container">
+                <img src="./images/glasses-icons/glasses-guy-green.svg">
+            </div>
+
+            <div class="home-button-bottom-mobile">
+                <a href="/">
+                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                    Home
+                </a>
+            </div>
+        </div>
+        <div class="margin-box">
+
+        </div>
+</body>
+<script src="./scripts/zoom.js"></script>
+
+</html>
